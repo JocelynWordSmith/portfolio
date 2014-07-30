@@ -138,12 +138,17 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/background.png) no-repeat bottom center scroll;
+    background-image: url("../img/background.png");
     background-color: #000;
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-attachment: fixed;
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
 }
 
 .intro .intro-body {
@@ -256,39 +261,43 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/starry-sky.jpg) no-repeat center center scroll;
+    background-image: url("../img/starry-sky.jpg");
     background-color: #F0F1F5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-attachment: fixed;
 }
 
 .resume-section {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/water-texture.jpg) no-repeat center center scroll;
+    background: url("../img/water-texture.jpg");
     background-color: #F0F1F5;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+
+    background-repeat: repeat-y;
+    background-position: top center;
+    background-attachment: fixed;
 }
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 250px;
+        padding-top: 100px;
     }
 
     .download-section {
         padding: 100px 0;
     }
 
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
 }
 
 .btn {
@@ -384,4 +393,8 @@ body {
 
 .container img {
     cursor: pointer;
+}
+
+.school-icon {
+    width: 400px;
 }
