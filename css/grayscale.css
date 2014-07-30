@@ -398,3 +398,8 @@ body {
 .school-icon {
     width: 400px;
 }
+
+.skills-modal {
+    background-color: blue;
+    border-radius: 6px;
+}
