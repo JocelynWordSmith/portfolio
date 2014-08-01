@@ -154,6 +154,15 @@ a:focus {
     display: table-cell;
     vertical-align: middle;
 }
+.brand-heading {
+    background-color: rgba(255,255,255,.3);
+    border-radius: 4px;
+    padding: 4%;
+    padding-bottom: 0;
+}
+.brand-heading img{
+    width: 100%;
+}
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
@@ -162,6 +171,10 @@ a:focus {
 .intro .intro-body .intro-text {
     font-size: 18px;
 }
+ .sword-down {
+    margin-left: -18%;
+    margin-bottom: 30%;
+ }
 
 @media(min-width:767px) {
     .intro {
@@ -380,9 +393,15 @@ body {
     width: 100%;
 }
 
-#portfolio, #work-history img{
+.mod-link {
     cursor: pointer;
 }
+
+.mod-link:hover {
+    transform: translateY(-.3em);
+    transition-duration: 0.2s;
+}
+
 
 .player-stats {
     margin-left: 8%;
