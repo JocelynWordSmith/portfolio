@@ -154,12 +154,12 @@ a:focus {
     display: table-cell;
     vertical-align: middle;
 }
-.brand-heading {
+/*.brand-heading {
     background-color: rgba(255,255,255,.3);
     border-radius: 4px;
     padding: 4%;
     padding-bottom: 0;
-}
+}*/
 .brand-heading img{
     width: 100%;
 }
