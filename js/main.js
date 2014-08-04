@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ console.log("Ignore the error about offset width of null. It's fine, I promise. And while I didn't add it to my portfolio, I also made this site by building on a super basic Bootstrap template. Cheers. -Joshua Smith")
+
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
