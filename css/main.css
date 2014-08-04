@@ -346,11 +346,11 @@ ul.banner-social-buttons {
     }
 }
 
-@media(min-width: 400px) {
+
      .skills-modal {
         height: 750px;
     }
-}
+
 
 @media(min-width: 1012px) {
      .skills-modal {
