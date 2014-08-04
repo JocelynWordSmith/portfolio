@@ -345,6 +345,7 @@ ul.banner-social-buttons {
     }
 }
 
+
 @media(max-width:767px) {
     ul.banner-social-buttons li {
         display: block;
@@ -355,6 +356,7 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+
 }
 
 footer {
@@ -431,5 +433,26 @@ body {
 .skills-icon {
     margin-right: 300px;
     width: 75px;
+}
+
+.skills-modal {
+    border-style: solid;
+    border-width: 26px 34px 34px 50px;
+    -moz-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
+    -webkit-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
+    -o-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
+    border-image: url(../img/blue-border.png) 30 38 28 45 fill stretch;
+    height: 750px;
+    padding-left: 5%;
+    background-color: #EDF0F5;
+    margin-top: 2%;
+
+}
+
+.skills-modal div {
+        min-width: 125px;
+        width: 20%;
+        float: left;
+        text-align: center;
 }
 
