@@ -402,13 +402,22 @@ body {
     transition-duration: 0.2s;
 }
 
-
-.player-stats {
-    margin-left: 8%;
-    margin-bottom: 8%;
+.player-img {
     float: left;
-    font-size: 2.4em;
-    line-height: 66px
+    line-height: 66px;
+    text-align: left;
+}
+.player-stats {
+    margin-top: 2%;
+    margin-left: 8%;
+    float: left;
+    line-height: 66px;
+    text-align: left;
+}
+
+.about {
+    border-top: solid 1px gray;
+    padding-top: 4%;
 }
 
 .school-icon {
