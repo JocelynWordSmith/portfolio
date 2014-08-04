@@ -57,6 +57,82 @@ a:focus {
     color: #11505d;
 }
 
+.mod-image {
+    width: 100%;
+}
+
+.mod-link {
+    cursor: pointer;
+    width: 80%;
+    max-width: 324px;
+}
+
+.mod-link:hover {
+    transform: translateY(-.3em);
+    transition-duration: 0.2s;
+}
+
+.player-img {
+    float: left;
+    line-height: 66px;
+    text-align: left;
+}
+.player-stats {
+    margin-top: 2%;
+    margin-left: 8%;
+    float: left;
+    line-height: 66px;
+    text-align: left;
+}
+
+.about {
+    border-top: solid 1px gray;
+    padding-top: 4%;
+}
+
+.player-stats img {
+    width: 12%;
+}
+
+
+.school-icon {
+    max-width: 400px;
+    width: 80%;
+}
+
+.work-icon {
+    max-width: 200px
+    width: 80%;
+}
+
+.skills-icon {
+    width: 75px;
+    margin-right: 200px;
+}
+
+.skills-modal {
+    border-style: solid;
+    border-width: 26px 34px 34px 50px;
+    -moz-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
+    -webkit-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
+    -o-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
+    border-image: url(../img/blue-border.png) 30 38 28 45 fill stretch;
+    /*height: 750px;*/
+    padding-left: 5%;
+    background-color: #EDF0F5;
+    margin-top: 2%;
+    height: 1500px;
+
+}
+
+
+.skills-modal div {
+        min-width: 125px;
+        width: 20%;
+        float: left;
+        text-align: center;
+}
+
 .light {
     font-weight: 400;
 }
@@ -111,6 +187,10 @@ a:focus {
 }
 
 @media(min-width:767px) {
+
+    .skills-modal {
+        height: 600px;
+    }
    
     .navbar {
         padding: 20px 0;
@@ -129,6 +209,12 @@ a:focus {
 
     .navbar-custom.top-nav-collapse {
         border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}
+
+@media(min-width: 1000px) {
+    .skills-modal {
+        height: 400px;
     }
 }
 
@@ -178,6 +264,11 @@ a:focus {
  }
 
 @media(min-width:767px) {
+
+    .skills-icon {
+        margin-right: 300px;
+    }
+
     .intro {
         height: 100%;
         padding: 0;
@@ -347,18 +438,8 @@ ul.banner-social-buttons {
 }
 
 
-     .skills-modal {
-        height: 750px;
-    }
-
-
-@media(min-width: 1012px) {
-     .skills-modal {
-        height: 400px;
-    }
-}
-
 @media(max-width:767px) {
+
      
     ul.banner-social-buttons li {
         display: block;
@@ -404,68 +485,5 @@ body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }
 
-.mod-image {
-    width: 100%;
-}
 
-.mod-link {
-    cursor: pointer;
-}
-
-.mod-link:hover {
-    transform: translateY(-.3em);
-    transition-duration: 0.2s;
-}
-
-.player-img {
-    float: left;
-    line-height: 66px;
-    text-align: left;
-}
-.player-stats {
-    margin-top: 2%;
-    margin-left: 8%;
-    float: left;
-    line-height: 66px;
-    text-align: left;
-}
-
-.about {
-    border-top: solid 1px gray;
-    padding-top: 4%;
-}
-
-.school-icon {
-    width: 400px;
-}
-
-.work-icon {
-    width: 200px;
-}
-
-.skills-icon {
-    margin-right: 300px;
-    width: 75px;
-}
-
-.skills-modal {
-    border-style: solid;
-    border-width: 26px 34px 34px 50px;
-    -moz-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
-    -webkit-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
-    -o-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
-    border-image: url(../img/blue-border.png) 30 38 28 45 fill stretch;
-    /*height: 750px;*/
-    padding-left: 5%;
-    background-color: #EDF0F5;
-    margin-top: 2%;
-
-}
-
-.skills-modal div {
-        min-width: 125px;
-        width: 20%;
-        float: left;
-        text-align: center;
-}
 
