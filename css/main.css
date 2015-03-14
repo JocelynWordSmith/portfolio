@@ -129,7 +129,10 @@ a:focus {
      float : left;
      clear: both;
 }
-
+#ship {
+    position: absolute;
+    z-index: 1000;
+}
 .light {
     font-weight: 400;
 }
@@ -498,6 +501,15 @@ body {
 }
 .modal-body > h4 {
     margin-bottom: 4px;
+}
+
+.bullet {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    position: relative;
+    /*z-index: 1150;*/
+    /*position: fixed;*/
 }
 
 

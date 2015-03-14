@@ -27,6 +27,10 @@ $(function() {
 });
 
 $(document).ready(function(){
+    var shipX = 0;
+    var shipM = 0;
+    var bCount = 0;
+
     var tallness = $(window).height();
     $('#buffer-fix').css('min-height', (tallness/2.2));
     
@@ -36,12 +40,24 @@ $(document).ready(function(){
     });
 
     $(window).mousemove(function(e){
+        shipX = e.pageX;
         var buff = $(window).width()/8;
-        $('#ship').css('margin-left', (e.pageX - buff) );
+        shipM = (shipX - buff);
+        $('#ship').css('margin-left', shipM );
 
     })
 
+    $('.mod-link').click(function(){
+        $('#ship-bound').append('<div id="bullet" class="bullet" style="left:' + (shipM + 52)  + 'px;"></div>');
+        $('.bullet').animate({
+            bottom : 600
+          }, 300, function() {
+            // Animation complete.
+            $('#bullet').remove()
+          });
+    })
 });
+
 
 // var mouseX = 0, mouseY = 0, limitX = 150-15, limitY = 150-15;
 // $(window).mousemove(function(e){
