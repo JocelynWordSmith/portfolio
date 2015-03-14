@@ -3,7 +3,9 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+});
  console.log("Ignore the error about offset width of null. It's fine, I promise. And while I didn't add it to my portfolio, I also made this site by building on a super basic Bootstrap template. Cheers. -Joshua Smith")
 
 // jQuery to collapse the navbar on scroll
@@ -27,6 +29,7 @@ $(function() {
 });
 
 $(document).ready(function(){
+
     var shipX = 0;
     var shipM = 0;
     var bCount = 0;
