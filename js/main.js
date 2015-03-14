@@ -6,7 +6,7 @@
 $(window).on('beforeunload', function() {
     $(window).scrollTop(0);
 });
- console.log("Ignore the error about offset width of null. It's fine, I promise. And while I didn't add it to my portfolio, I also made this site by building on a super basic Bootstrap template. Cheers. -Joshua Smith")
+ console.log("There shouldn't be any errors down here, but if there are they were totally on purpose. And while I didn't add it to my portfolio, I made this site by building on a Bootstrap template. The space and water images are from unsplash.com, but I made pretty much all the icons and the top logo. Cheers. -Joshua Smith")
 
 // jQuery to collapse the navbar on scroll
 $(window).scroll(function() {
