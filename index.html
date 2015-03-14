@@ -115,7 +115,7 @@
 
                     <p>After graduating a web development course at The Iron Yard Academy in front end engineering, and developing for hungercrunch.com, Michelin North America, Allen Arms, and Benefitfocus, his programming interests outside of work revolve around data visualization and sending thank you cards to companies with public APIs</p>
 
-                    <p>A Full Sail University graduate with a degree in Creative Writing, Joshua likes industrial design, writing short films, short stories, and spends his free time in a state of transcendental caffeination either working some coding project, playing drums, or writing stand up comedy. He spent six years in the U.S. Army, loved every second of it, but doesn't like shaving every day so that's all behind him.</p>
+                    <p>A Full Sail University graduate with a degree in Creative Writing, Joshua likes industrial design, writing short films, short stories, and spends his free time in a state of transcendental caffeination either working on some coding project, playing drums, or writing stand up comedy. He spent six years in the U.S. Army, loved every second of it, but doesn't like shaving every day so that's all behind him.</p>
                 </div>
             </div>
         </div>
@@ -130,8 +130,12 @@
                 <div class="col-lg-8 col-lg-offset-2">
                         <img src="img/invader-hc.png" class="mod-link" data-toggle="modal" data-target="#hunger-modal">
                         <img src="img/invader-sp.png" class="mod-link" data-toggle="modal" data-target="#surf-modal">
-                        <img src="img/invader-d1.png" class="mod-link" data-toggle="modal" data-target="#day1-modal">
-                    
+                        <img src="img/invader-mich.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal">
+                        <img src="img/invader-oplan.png" class="mod-link" data-toggle="modal" data-target="#oplan-modal">
+                        <div id="buffer-fix"></div>   
+                </div>
+                <div id="ship-bound">
+                        <img id="ship" src="img/ship.png">
                 </div>
 
             </div>
@@ -166,7 +170,6 @@
             <img src="img/hc3.png" class="mod-image">
             <p>The languages used were HTML, CSS (scss), and JavaScript, and were supported by jQuery, Underscore, and Parse (a backbone derivative). List.js was used to manage list filtering, and pickadate.js was used for interactive calendars to choose start and end dates for the tournaments. Modernizer and sass were also used.</p>
             <img src="img/hc4.png" class="mod-image">
-            <p>My team was successful in building this app in two and a half weeks despite using new plugins and cloud code functions to manage the score totaling on multiple levels (total score, group scores, and player scores). There is also login functionality, and ACL's attached to certain objects to ensure that only the group leaders can change their team members, and also dynamic options that will only show up if the person with access is the one viewing the page.</p>
             <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
@@ -207,7 +210,7 @@
                         <a href="http://joshuawordsmith.github.io/surf-and-paddle/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
                     </li>
                 </ul>
-            <p>I was given a design document to replicate down to the pixel. This was my first experience doing a CSS heavy project, as it was in the first week of the course. Below is the design I was given, followed by a screencap of the site I built.</p>
+            <p>I was given a design document to replicate down to the pixel during my first week of class at The Iron Yard. Below is the design I was given, followed by a screencap of the site I built. Just a note, this is a demo site and so not fully functional</p>
             <img src="img/designdoc.png" class="mod-image">
             <p>Above is the png I was given to duplicate with html and CSS</p>
             <img src="img/surfpaddle.jpg" class="mod-image">
@@ -231,13 +234,13 @@
       </div>
     </div>
 
-    <!-- Day One Modal -->
-    <div class="modal fade" id="day1-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Michelin Modal -->
+    <div class="modal fade" id="michelin-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Day one Homework</h4>
+            <h4 class="modal-title" id="myModalLabel">Michelin North America</h4>
           </div>
           <div class="modal-body">
             <ul class="list-inline banner-social-buttons">
@@ -245,28 +248,60 @@
                         <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/JoshuaWordSmith/Day1-hw" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">View Code</span></a>
-                    </li>
-                    <li>
-                        <a href="http://joshuawordsmith.github.io/Day1-hw/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
+                        <a href="http://mymechanicapp.com" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
                     </li>
                 </ul>
-            <p>This is the first website I ever built. It was just simple HTML and  CSS, but I made this the night after day one of instruction at The Iron Yard Academy. I'm posting it here mostly to show how far I've come as a developer in just three months, in hopes it offers an understanding on my passion to learn, and my commitment to constantly improving the work that I do.</p>
-            <img src="img/dayone1.png" class="mod-image">
-            <p>This is a simple about me page, and I was trying to use all the list types available</p>
-            <img src="img/dayone2.png" class="mod-image">
-            <p>This is from the home page, and the images are links, and have alt text. there is also a permanent floating navigation bar</p>
-            <img src="img/dayone3.png" class="mod-image">
-            <p>This was the first iFrame I ever used, which I thought was insanely cool at the time.</p>
+            <p>Michelin hired me to work with their incubator team to help build a new product called myMechanic, which was basically open table but for mechanic shops, so that people could easily schedule car repairs, and so the shops could manage their appointments internally</p>
+            <img src="img/mymechanic-splash.png" class="mod-image">
+            <p>This is an early version of the scheduling interface, as seen by a mechanic's shop</p>
+            <img src="img/mymechanic-schedule.png" class="mod-image">
+            <p>This was the majority of my responsibility outside of the mobile app, and it tracked the payment standing of the shops, and gave the admin the ability to disable and enable shops easily for use violations. For the charts I used OOcharts.js which interprets google analytics and I thought looked more in line with our app than the standard google charts.</p>
+            <img src="img/mymechanic-admin.png" class="mod-image">
             <ul class="list-inline banner-social-buttons">
                     <li>
                         <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
                     </li>
                     <li>
-                        <a href="https://github.com/JoshuaWordSmith/Day1-hw" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">View Code</span></a>
+                        <a href="http://mymechanicapp.com" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
+                    </li>
+                </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <!-- Oplan Modal -->
+    <div class="modal fade" id="oplan-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title" id="myModalLabel">OPlan (Operational Plan)</h4>
+          </div>
+          <div class="modal-body">
+            <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
                     </li>
                     <li>
-                        <a href="http://joshuawordsmith.github.io/Day1-hw/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
+                        <i class="fa fa-github fa-fw"></i> <span class="network-name">Public Site Coming Soon!</span>
+                    </li>
+                </ul>
+            <p>This project was originally just a contract for Allen Arms, but since we retained the rights to the code we are currently developing it for added functionality, and they are helping us test new feature rollouts and changes. Below is the scan page, and it works with a USB scanner to read serial numbers and UPCs. It is quite a bit faster than writing all the serial numbers down by hand, which is how it is was handled.</p>
+            <img src="img/oplan-scan.png" class="mod-image">
+            <p>This is the customer page, where you can add new customers or search for an existing one and start an order. Due to the nature of the industry, it is required that all customer information be saved.</p>
+            <img src="img/oplan-customers.png" class="mod-image">
+            <p>Here is the inventory page, which updates with live totals from the server, and also has editing functionality for when prices change or new items come into stock</p>
+            <img src="img/oplan-inventory.png" class="mod-image">
+            <p>This is an example invoice, and can either be printed or saved as a pdf. The output looks different from the page as to be in line with the invoice forms the shop is accustomed to.</p>
+            <img src="img/oplan-invoice.png" class="mod-image">
+            <p>The site is currently live, but is in Alpha testing and requires a log in. If you would like more specific information just let me know, I would be happy to chat.</p>
+            <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
                     </li>
                 </ul>
           </div>
@@ -470,7 +505,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>Contact Joshua Smith</h2>
-                <p>Whether you liked anything enough to talk about working together, want to grab a cup of coffee, or hated anything enough that you need to let me know, I look forward to hearing from you.</p>
+                <p>Whether you liked anything enough to talk about working together, or hated anything enough that you need to let me know, I look forward to hearing from you.</p>
                 <p>Email me at <a href="mailto:joshuawordsmith@gmail.com">JoshuaWordSmith@gmail.com</a></p>
                 <p>References and sweet drum solos available upon request.</p>
                 <ul class="list-inline banner-social-buttons">
