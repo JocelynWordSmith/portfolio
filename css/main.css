@@ -150,6 +150,10 @@ a:focus {
     margin-right: 200px;
 }
 
+.education img {
+    cursor: pointer;
+}
+
 .skills-modal {
     border-style: solid;
     border-width: 26px 34px 34px 50px;
