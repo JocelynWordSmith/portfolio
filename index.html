@@ -2,37 +2,29 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Joshua Smith's Portfolio</title>
-
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom CSS -->
     <link href="css/main.css" rel="stylesheet">
-
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -44,274 +36,108 @@
                     <i class="fa fa-arrow-circle-up"> </i>
                 </a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#work-history">Work History</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+            <div data-replace="navbar-main-collapse" class="collapse navbar-collapse navbar-right navbar-main-collapse"></div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
     </nav>
-
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><img src="img/jsmith-copy.png"></h1>
+                        <h1 aria-label="Joshua Smith logo" class="brand-heading">
+                            <img src="img/jsmith-copy.png" aria-hidden="true">
+                        </h1>
                         <p class="intro-text">Web developer. Writer. Sub par dancer.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <img class="sword-down" src="img/sword-down.png">
+                        <a href="#about" class="btn btn-circle page-scroll" aria-label="about">
+                            <img class="sword-down" src="img/sword-down.png" aria-hidden="true">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
     <!-- About Section -->
     <section id="about" class="content-section text-center">
         <div class="about-section">
             <div class="container">
                 <div class="player-img">
-                    <img src="img/face-200.png">
+                    <img class="profile-img" src="img/stone_throw.jpg">
                 </div>
                 <div class="player-stats">
-                    <h3>Player: Joshua Smith</h3>
-                    <h3>Level: 27</h3>
-                    <h3>Health: <img src="img/heart-icon.png">
-                            <img src="img/heart-icon.png">
-                            <img src="img/heart-icon.png">
-                    </h3>
+                    <p>Player: Joshua Smith</p>
+                    <p>Level: 30</p>
+                    <p aria-label="health bar">Health:
+                        <img src="img/heart-icon.png" aria-hidden="true">
+                        <img src="img/heart-icon.png" aria-hidden="true">
+                        <img src="img/heart-icon.png" aria-hidden="true">
+                    </p>
                 </div>
             </div>
             <div class="container">
-
-            <div class="row about">
-                <div class="col-lg-8 col-lg-offset-3">
-
-                    <h2>Player Summary:</h2>
-                    
-                    <p>Currently splitting his time between running a startup and various contract work, Joshua enjoys getting to learn and explore new web tech in order to make cooler stuff, and refactor existing projects to help rid the work of janky nightmare code. He also uses the term ‘web 2.0’ way more than anyone should anymore, and thinks it is funny every time.</p>
-
-                    <p>After graduating a web development course at The Iron Yard Academy in front end engineering, and developing for hungercrunch.com, Michelin North America, Oplan.co, and Benefitfocus, his programming interests outside of work revolve around data visualization and sending thank you cards to companies with public APIs.</p>
-
-                    <p>A Full Sail University graduate with a degree in Creative Writing, Joshua likes industrial design, writing short films, short stories, and spends his free time in a state of transcendental caffeination either working on some coding project, playing drums, or writing stand up comedy. He spent six years in the U.S. Army, loved every second of it, but doesn't like shaving every day so that's all behind him.</p>
+                <div class="row about">
+                    <div class="col-lg-8 col-lg-offset-3">
+                        <h2>Player Summary:</h2>
+                        <p>
+                            Currently employed at Bank of America as the Front End Standards and Architecture team lead. I sling a lot of JavaScript
+                            and and advocate for user-centric design. I try to apply concepts of Industrial Design into that,
+                            but the main goal is always to provide value to whoever the heck is going to use my applications.
+                        </p>
+                        <p>
+                            I have a Bachelors in Creative Writing, and a crippling reliance on spellcheck (Grammarly is my bff). I'm currently in the
+                            process of getting my Masters in Computer Science from Northeastern University. My area of focus
+                            is currently AI, but I'm at the very beginning of that journey.
+                        </p>
+                        <p>
+                            I love working in JS, but I'm enjoying the contrast with the more traditional stuff. I'm getting my Masters mainly to get
+                            a more fundamental understanding of the technology I rely on. I'd like to get to the point where
+                            if I get transported back in time 50 years I can still explain to people what it is that I do.
+                        </p>
+                        <p>
+                            My main area of experience is UI/UX Engineering. I'd rather call it UI/UX design, but visual design is not the intended connotation.
+                            More specifically, the buzzwords that get thrown around about what I do are Usability Expert,
+                            Accessibility Specialist, JavaScript Engineer, and Front End Architect. I agree with the use
+                            of those terms to varying degrees. Human/Computer Interface design is a big area of interest,
+                            as is Brutalist Architecture, making and taking coffee, SNES games, Speculative fiction, and
+                            eating mostly carbs.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
-
     <!-- portfolio Section -->
     <section id="portfolio" class="content-section text-center">
         <div class="download-section">
             <div class="container">
                 <h2>Portfolio</h2>
-                <div class="col-lg-8 col-lg-offset-2">
-                        <img src="img/invader-hc.png" class="mod-link" data-toggle="modal" data-target="#hunger-modal">
-                        <img src="img/invader-sp.png" class="mod-link" data-toggle="modal" data-target="#surf-modal">
-                        <img src="img/invader-mich.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal">
-                        <img src="img/invader-oplan.png" class="mod-link" data-toggle="modal" data-target="#oplan-modal">
-                        <div id="buffer-fix"></div>   
+                <div class="col-lg-8 col-lg-offset-2 game-box">
+                    <div role="button" class="mod-link-container">
+                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#hunger-modal">
+                        <span>Hunger Crunch</span>
+                    </div>
+                    <div role="button" class="mod-link-container">
+                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#bofa-modal">
+                        <span>Bank of America</span>
+                    </div>
+                    <div role="button" class="mod-link-container">
+                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal">
+                        <span>Michelin</span>
+                    </div>
+                    <div role="button" class="mod-link-container">
+                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#oplan-modal">
+                        <span>Oplan</span>
+                    </div>
                 </div>
                 <div id="ship-bound">
-                        <img id="ship" src="img/ship.png">
+                    <img id="ship" src="img/ship.png" aria-hidden="true">
                 </div>
-
             </div>
         </div>
     </section>
-
-    <!-- Hunger Crunch Modal -->
-    <div class="modal fade" id="hunger-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Hunger Crunch</h4>
-          </div>
-          <div class="modal-body">
-            <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jeffdill2/hunger-crunch-tournament" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">View Code</span></a>
-                    </li>
-                    <li>
-                        <a href="http://www.hungercrunch.com/tournaments/" class="btn btn-default btn-lg"><i class="fa fa-shield fa-fw"></i> <span class="network-name">Live Site</span></a>
-                    </li>
-                </ul>
-            <p>As my final project for the development class I took at The Iron Yard Academy in Greenville, SC, I developed a web app for a game called hunger crunch. The game can currently be found at the <a href="http://www.hungercrunch.com/">Hunger Crunch</a> website, or on the iOS App Store. The app is scheduled to get a test run with about 700 users in September of 2014, after which it will go live for regular use.</p>
-            <img src="img/hc1.png" class="mod-image">
-            <p>The team I worked with was given designs to help us stay in line with the existing site's styles, and we used <a href="http://www.parse.com">parse.com</a> to manage our data, so all the information displayed is live and dynamic.</p>
-            <img src="img/hc2.png" class="mod-image">
-            <p>The purpose of the app is to give youth group leaders and teachers a way of managing tournament scores based on the incoming player data in the game, as well as a way to manage what players were in which groups in order to have competitions betweens grades or small groups.</p>
-            <img src="img/hc3.png" class="mod-image">
-            <p>The languages used were HTML, CSS (scss), and JavaScript, and were supported by jQuery, Underscore, and Parse (a backbone derivative). List.js was used to manage list filtering, and pickadate.js was used for interactive calendars to choose start and end dates for the tournaments. Modernizer and sass were also used.</p>
-            <img src="img/hc4.png" class="mod-image">
-            <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/jeffdill2/hunger-crunch-tournament" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">View Code</span></a>
-                    </li>
-                    <li>
-                        <a href="http://www.hungercrunch.com/tournaments/" class="btn btn-default btn-lg"><i class="fa fa-shield fa-fw"></i> <span class="network-name">Live Site</span></a>
-                    </li>
-                </ul>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Surf and Paddle Modal -->
-    <div class="modal fade" id="surf-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Surf and Paddle</h4>
-          </div>
-          <div class="modal-body">
-            <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/JoshuaWordSmith/surf-and-paddle" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">View Code</span></a>
-                    </li>
-                    <li>
-                        <a href="http://joshuawordsmith.github.io/surf-and-paddle/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
-                    </li>
-                </ul>
-            <p>I was given a design document to replicate down to the pixel during my first week of class at The Iron Yard. Below is the design I was given, followed by a screencap of the site I built. Just a note, this is a demo site and so not fully functional</p>
-            <img src="img/designdoc.png" class="mod-image">
-            <p>Above is the png I was given to duplicate with html and CSS</p>
-            <img src="img/surfpaddle.jpg" class="mod-image">
-            <p>Here is JPG of the site I actually built. I had to take three separate screen captures and put them together in photoshop so that the full site could be seen. The overlays on the images under "MOST POPULAR POSTS" respond on hover by changing their transparency. Check out the live site and the code if you have the time.</p>
-            <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/JoshuaWordSmith/surf-and-paddle" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">View Code</span></a>
-                    </li>
-                    <li>
-                        <a href="http://joshuawordsmith.github.io/surf-and-paddle/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
-                    </li>
-                </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Michelin Modal -->
-    <div class="modal fade" id="michelin-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Michelin North America</h4>
-          </div>
-          <div class="modal-body">
-            <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
-                    </li>
-                    <li>
-                        <a href="http://mymechanicapp.com" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
-                    </li>
-                </ul>
-            <p>Michelin hired me to work with their incubator team to help build a new product called myMechanic, which was basically open table but for mechanic shops, so that people could easily schedule car repairs, and so the shops could manage their appointments internally</p>
-            <img src="img/mymechanic-splash.png" class="mod-image">
-            <p>This is an early version of the scheduling interface, as seen by a mechanic's shop</p>
-            <img src="img/mymechanic-schedule.png" class="mod-image">
-            <p>The admin page the majority of my responsibility outside of the mobile app, and it tracked the payment standing of the shops, and gave the non developers on the team the ability to disable and enable shops easily for use violations or payment issues. For the charts I used OOcharts.js which interprets google analytics and I thought looked more in line with our app than the standard google charts.</p>
-            <img src="img/mymechanic-admin.png" class="mod-image">
-            <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
-                    </li>
-                    <li>
-                        <a href="http://mymechanicapp.com" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
-                    </li>
-                </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>    
-
-    <!-- Oplan Modal -->
-    <div class="modal fade" id="oplan-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">OPlan (Operational Plan)</h4>
-          </div>
-          <div class="modal-body">
-            <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
-                    </li>
-                    <li>
-                        <a href="http://oplan.co" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Live Site</span></a>
-                    </li>
-                </ul>
-            <p>This project was originally just a contract for <a href="http://www.allenarmstactical.com/">Allen Arms Tactical</a>, but since we retained the rights to the code we are currently developing it for added functionality, and they are helping us test new feature rollouts and changes. Below is the scan page, and it works with a USB scanner to read serial numbers and UPCs. It is quite a bit faster than writing all the serial numbers down by hand, which is how it is was handled.</p>
-            <img src="img/oplan-scan.png" class="mod-image">
-            <p>This is the customer page, where you can add new customers or search for an existing one and start an order. Due to the nature of the industry, it is required that all customer information be saved.</p>
-            <img src="img/oplan-customers.png" class="mod-image">
-            <p>Here is the inventory page, which updates with live totals from the server, and also has editing functionality for when prices change or new items come into stock</p>
-            <img src="img/oplan-inventory.png" class="mod-image">
-            <p>This is an example invoice, and can either be printed or saved as a pdf. The output looks different from the page as to be in line with the invoice forms the shop is accustomed to.</p>
-            <img src="img/oplan-invoice.png" class="mod-image">
-            <p>The site is currently live, but is in Alpha testing and requires a log in. If you would like more specific information just let me know, I would be happy to chat.</p>
-            <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Contact Josh</span></a>
-                    </li>
-                </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Work History Section -->
     <section id="work-history" class="content-section text-center">
         <div class="resume-section">
@@ -319,210 +145,18 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Work History Map</h2>
                     <div class="education">
-                        <img src="img/school.png" class="school-icon mod-image" data-toggle="modal" data-target="#education-modal">
-                        <img src="img/freelance.png" class="work-icon mod-image" data-toggle="modal" data-target="#work-modal">
-                        <img src="img/skills.png" class="skills-icon mod-image" data-toggle="modal" data-target="#skills-modal">
-                        
+                        <img src="img/school.png" class="school-icon" data-toggle="modal" data-target="#education-modal" alt="education layer trigger">
+                        <img src="img/freelance.png" class="work-icon" data-toggle="modal" data-target="#work-modal" alt="work history layer trigger">
+                        <img src="img/skills.png" class="skills-icon" data-toggle="modal" data-target="#skills-modal" alt="skills layer trigger">
                     </div>
-                    
                 </div>
             </div>
         </div>
     </section>
-
-        <!-- Education Modal -->
-    <div class="modal fade" id="education-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Education</h4>
-          </div>
-          <div class="modal-body">
-            <h2>The Iron Yard Academy</h2>
-            <h4>Certificate of Completion</h4>
-            <h6>Greenville SC 2014</h6>
-            <p>Three month intensive programming course that teaches HTML, CSS, and JavaScript with a focus on building production quality apps with robust, attractive, responsive interfaces. Noted skills learned were jQuery, underscore, backbone, Parse, HTML5, CSS3. There was a strong focus on design and good programming practices, and I also learned some back end functionality to make http requests and updates to various API structures, and do server functions to compound and restructure data.</p>
-            <h2>Full Sail University</h2>
-            <h4>B.A. in Creative Writing for Media</h4>
-            <h6>Orlando FL 2014</h6>
-            <p>Accelerated program in Creative Writing that focused on visual storytelling through short stories, scripts, and graphic mediums. I took classes on campus but finished my senior year online while living and writing in Baltimore, MD.</p>
-            <h2>St. Joseph's Catholic School</h2>
-            <h4>High School Diploma</h4>
-            <h6>Greenville SC 2006</h6>
-            <p>College preperatory private high school. I was president of speech and debate, a member of the National Thespian Society, and National Latin Honor Society. I played Rugby, Varsity Baseball, and ran Varsity Cross Country.</p>
-
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-        <!-- Freelance Modal -->
-    <div class="modal fade" id="work-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Work History</h4>
-          </div>
-          <div class="modal-body">
-            <h2>Interaction Engineer</h2>
-            <h4>Benefitfocus</h4>
-            <ul>
-                <li>Work between the UX group and shopping application to fix conflicts in core code during transition from legacy code to newer application code</li>
-                <li>Implement client facing layout and functionality changes as well as updating internal functionality as legacy code is deprecated and the platform moves towards higher flexibility and optimization</li>
-                <li>Daily work involves changes to Dust templates, styles in Less, specific helper functions in JQuery/JavaScript, and core engine changes in CoffeeScript and Underscore</li>
-            </ul>
-            <h2>Freelance Web Developer</h2>
-            <h4>Michelin North America</h4>
-            <ul>
-                <li>Developed company side tools to manage customer profiles and track analytics, both through google analytics and custom datum tracking</li>
-                <li>Built out settings for customers to manage shop information, relating both to consumer side appearance and scheduling logic</li>
-                <li>Managed cloud code (server) functionality to handle consumer communications (email/text) and existing data updating and management</li>
-                <li>Refactored/rebuilt website into a functionally similar but significantly different  mobile application to Google Play store, including the creation of keystore and touch screen functionality using Adobe PhoneGap</li>
-            </ul>
-            <h4>OPlan</h4>
-            <ul>
-                <li>Architect and cofounder of inventory management system for NFA (federally) regulated items relating to the hunting/defense/firearms industry</li>
-                <li>Handled data architecture  for server side relational data, and built the application structure</li>
-                <li>Built dynamic sales records and invoice templates based on customers served and items sold, tracking current inventory, backorder management, and NFA regulated items awaiting federal paperwork filing/return</li>
-                <li>Improved (federally mandated) recording of incoming and outgoing inventory management by at least 5X</li>
-                <li>Currently in testing with single client (Allen Arms Tactical, Greenville SC)</li>
-            </ul>
-            <h4>HungerCrunch.com</h4>
-            <ul>
-                <li>Developed leaderboards with a team of three for a game with in app purchases that went directly to Rice Bowls, a charity feeding children around the world</li>
-                <li>Responsible for implementing their design documents into functioning web pages in line with the existing site</li>
-                <li>Wrote JavaScript algorithms to quantify thousands of objects for game totals, group totals, and player stats. Wrote some as server side code to optimize page load times, as well as the code for the router and views.</li>
-            </ul>
-            <h2>Freelance Copywriter</h2>
-            <h4>Breakout Bras</h4>
-            <ul>
-                <li>Provided item descriptions for online store</li>
-                <li>Responsible for research, writing, and editing descriptions</li>
-            </ul>
-            <h4>Loft Resumes</h4>
-            <ul>
-                <li>Wrote and compiled CV’s for clients in and out of the United States</li>
-            </ul>
-            <h4>Carolina Painting Supply</h4>
-            <ul>
-                <li>Wrote content for their business site</li>
-            </ul>
-            <h2>United States Army</h2>
-            <h4>Combat Engineer SPC</h4>
-            <ul>
-                <li>Completed AIT at Ft. Leonardwood MO in April of 2007 as a Combat Engineer (12B). Primary training revolved around the proper setting, execution, and disposal of friendly demolitions, as well as the detection and disposal of enemy explosives</li>
-                <li>Trained and licensed for numerous vehicles, although I spent the most time driving an uparmored Humvee. I participated in multi vehicle convoys from eight to twelve hours in length, and have experience driving the lead vehicle in training exercises. Combat Life Saver Certified.</li>
-                <li>Left the army in good standing after fulfilling my contract (six years  in the U.S. Army Reserves, plus two years inactive)</li>
-            </ul>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- skills Modal -->
-    <div class="modal fade" id="skills-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-            <h4 class="modal-title" id="myModalLabel">Skills</h4>
-          </div>
-          <div class="modal-body  skills-modal">
-            <div>
-                <img src="img/bow.png">
-                <h4>HTML5/CSS3</h4>
-            </div>
-            <div>
-                <img src="img/boomerang.png">
-                <h4>Underscore</h4>
-            </div>
-            <div>
-                <img src="img/bomb.png">
-                <h4>JavaScript</h4>
-            </div>
-            <div>
-                <img src="img/lantern.png">
-                <h4>Backbone</h4>
-            </div>
-            <div>
-                <img src="img/net.png">
-                <h4>jQuery</h4>
-            </div>   
-            <div>
-                <img src="img/heart-container.png">
-                <h4>Parse.com</h4>
-            </div>
-            <div>
-                <img src="img/boss-key.png">
-                <h4>Less/SCSS</h4>
-            </div>
-            <div>
-                <img src="img/sword-down.png">
-                <h4>Dust.js</h4>
-            </div>
-            <div>
-                <img src="img/chest.png">
-                <h4>CoffeeScript</h4>
-            </div>
-            <div>
-                <img src="img/red-pot.png">
-                <h4>iTerm/Zsh</h4>
-            </div>
-            <div>
-                <img src="img/green-pot.png">
-                <h4>Sourcetree</h4>
-            </div>
-            <div>
-                <img src="img/blue-pot.png">
-                <h4>Git/Github</h4>
-            </div>
-            <div>
-                <img src="img/sheild.png">
-                <h4>Sublime Text</h4>
-            </div>
-            <div>
-                <img src="img/gem.png">
-                <h4>Node</h4>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <div data-replace="skills-modal"></div>
     <!-- Contact Section -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact Joshua Smith</h2>
-                <p>Whether you liked anything enough to talk about working together, or hated anything enough that you need to let me know, I look forward to hearing from you.</p>
-                <p>Email me at <a href="mailto:joshuawordsmith@gmail.com">JoshuaWordSmith@gmail.com</a></p>
-                <p>References and sweet drum solos available upon request.</p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="mailto:joshuawordsmith@gmail.com" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">Email</span></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/JoshuaWordSmith" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/Joshuawordsmith" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
+    <div data-replace="contact-section"></div>
     <!-- Footer -->
     <footer>
         <div class="container text-center">
@@ -530,21 +164,402 @@
         </div>
     </footer>
 
+
+
+    <!-- Hunger Crunch Modal -->
+    <div class="modal fade" id="hunger-modal" tabindex="-1" role="dialog" aria-labelledby="hcModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="hcModalLabel">Hunger Crunch</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-replace="contact-link"></li>
+                        <li>
+                            <a href="https://github.com/jeffdill2/hunger-crunch-tournament" class="btn btn-default btn-lg">
+                                <i class="fa fa-github fa-fw" aria-label="github icon"></i>
+                                <span class="network-name">View Code</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.hungercrunch.com/tournaments/" class="btn btn-default btn-lg">
+                                <i class="fa fa-shield fa-fw" aria-label="sheild icon"></i>
+                                <span class="network-name">Live Site</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>As my final project for the development class I took at The Iron Yard Academy in Greenville, SC, I developed
+                        a web app for a game called hunger crunch. The game can currently be found at the
+                        <a href="http://www.hungercrunch.com/">Hunger Crunch</a> website, or on the iOS App Store. The app is scheduled to get a test run with about
+                        700 users in September of 2014, after which it will go live for regular use.</p>
+                    <img src="img/hc1.png" class="mod-image" alt="hunger cruch website screen capture">
+                    <p>The team I worked with was given designs to help us stay in line with the existing site's styles, and
+                        we used
+                        <a href="http://www.parse.com">parse.com</a> to manage our data, so all the information displayed is live and dynamic.</p>
+                    <img src="img/hc2.png" class="mod-image" alt="hunger cruch website screen capture">
+                    <p>The purpose of the app is to give youth group leaders and teachers a way of managing tournament scores
+                        based on the incoming player data in the game, as well as a way to manage what players were in which
+                        groups in order to have competitions betweens grades or small groups.</p>
+                    <img src="img/hc3.png" class="mod-image" alt="hunger cruch website screen capture">
+                    <p>The languages used were HTML, CSS (scss), and JavaScript, and were supported by jQuery, Underscore, and
+                        Parse (a backbone derivative). List.js was used to manage list filtering, and pickadate.js was used
+                        for interactive calendars to choose start and end dates for the tournaments. Modernizer and sass
+                        were also used.</p>
+                    <img src="img/hc4.png" class="mod-image" alt="hunger cruch website screen capture">
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-replace="contact-link"></li>
+                        <li>
+                            <a href="https://github.com/jeffdill2/hunger-crunch-tournament" class="btn btn-default btn-lg">
+                                <i class="fa fa-github fa-fw" aria-label="github icon"></i>
+                                <span class="network-name">View Code</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.hungercrunch.com/tournaments/" class="btn btn-default btn-lg">
+                                <i class="fa fa-shield fa-fw" aria-label="shield icon"></i>
+                                <span class="network-name">Live Site</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Michelin Modal -->
+    <div class="modal fade" id="michelin-modal" tabindex="-1" role="dialog" aria-labelledby="michelinModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="michelinModalLabel">Michelin North America</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-replace="contact-link"></li>
+                        <li>
+                            <a href="http://mymechanicapp.com" class="btn btn-default btn-lg">
+                                <i class="fa fa-shield fa-fw" aria-label="shield icon"></i>
+                                <span class="network-name">Live Site</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Michelin hired me to work with their incubator team to help build a new product called myMechanic, which
+                        was basically open table but for mechanic shops, so that people could easily schedule car repairs,
+                        and so the shops could manage their appointments internally</p>
+                    <img src="img/mymechanic-splash.png" class="mod-image" alt="my mechanic website screen capture">
+                    <p>This is an early version of the scheduling interface, as seen by a mechanic's shop</p>
+                    <img src="img/mymechanic-schedule.png" class="mod-image" alt="my mechanic website screen capture">
+                    <p>The admin page the majority of my responsibility outside of the mobile app, and it tracked the payment
+                        standing of the shops, and gave the non developers on the team the ability to disable and enable
+                        shops easily for use violations or payment issues. For the charts I used OOcharts.js which interprets
+                        google analytics and I thought looked more in line with our app than the standard google charts.</p>
+                    <img src="img/mymechanic-admin.png" class="mod-image" alt="my mechanic website screen capture">
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-replace="contact-link"></li>
+                        <li>
+                            <a href="http://mymechanicapp.com" class="btn btn-default btn-lg">
+                                <i class="fa fa-shield fa-fw"></i>
+                                <span class="network-name">Live Site</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- BofA modal -->
+    <div class="modal fade" id="bofa-modal" tabindex="-1" role="dialog" aria-labelledby="bofaModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="bofaModalLabel">Bank of America</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-replace="contact-link"></li>
+                        <li>
+                            <a href="https://www.bankofamerica.com/deposits/checking/personal-checking-account/" class="btn btn-default btn-lg">
+                                <i class="fa fa-shield fa-fw"></i>
+                                <span class="network-name">Live Site</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>I built reusable components that are shared across all digital sales sites. Things like focus management
+                        utilities for screen readers, input validation and formatting that actually works properly with android
+                        keyboards, a reusable template library that made rapid page deployment much easier, and updates to
+                        accordions, headers, navigation, messaging, and more. These is a massive amount of code for all the
+                        product lines, but some of what I did shows up on all all of them, or will once the updated page
+                        is released.</p>
+                    <p>The small business application was one of the first responsive rebuilds of an application flow that I
+                        architected. When I started at the bank I was on the deposits team, so most checking and savings
+                        accounts came across my desk.</p>
+                    <p>For this application flow, I utilized redux and handlebars for our state management and rendering complextity
+                        as the user moves through the application process. There is a variable amount of pages each with
+                        dynamic content based on previous selections.</p>
+                    <img src="img/small-biz-app.png" class="mod-image" alt="bank of america small business application website screen capture">
+                    <p>The research (non application) pages were largely what I worked on before I moved over to macro level
+                        work on shared components.</p>
+                    <img src="img/core-checking.png" class="mod-image" alt="bank of america core checking website screen capture">
+                    <p>The work I have done has made it on to nearly every responsive product page, and the effort to convert
+                        legacy pages into the new reponsive format is ongoing. It's pretty rad knowing that a few million
+                        people have interacted with things that you made.</p>
+                    <img src="img/auto-loan-rates.png" class="mod-image" alt="bank of america auto loan website screen capture">
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-replace="contact-link"></li>
+                        <li>
+                            <a href="https://www.bankofamerica.com/smallbusiness/business-financing/auto-loans/" class="btn btn-default btn-lg">
+                                <i class="fa fa-github fa-fw"></i>
+                                <span class="network-name">Live Site</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Oplan Modal -->
+    <div class="modal fade" id="oplan-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">OPlan (Operational Plan)</h4>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-replace="contact-link"></li>
+                        <li>
+                            <a href="http://oplan.co" class="btn btn-default btn-lg">
+                                <i class="fa fa-github fa-fw"></i>
+                                <span class="network-name">Live Site</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p>Oplan (operations plan) was a specialty inventory management system that made it easier to track when,
+                        where, and who was purchasing and selling federeally regulated firearms and accesories.</p>
+                    <img src="img/oplan-scan.png" class="mod-image" alt="oplan inventory website screen capture">
+                    <p>This is the customer page, where you can add new customers or search for an existing one and start an
+                        order. Due to the nature of the industry, it is required that all customer information be saved.</p>
+                    <img src="img/oplan-customers.png" class="mod-image" alt="oplan inventory website screen capture">
+                    <p>Here is the inventory page, which updates with live totals from the server, and also has editing functionality
+                        for when prices change or new items come into stock</p>
+                    <img src="img/oplan-inventory.png" class="mod-image" alt="oplan inventory website screen capture">
+                    <p>This is an example invoice, and can either be printed or saved as a pdf. The output looks different from
+                        the page as to be in line with the invoice forms the shop is accustomed to.</p>
+                    <img src="img/oplan-invoice.png" class="mod-image" alt="oplan inventory website screen capture">
+                    <p>The site is currently live, but is in Alpha testing and requires a log in. If you would like more specific
+                        information just let me know, I would be happy to chat.</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-replace="contact-link"></li>
+                    </ul>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Education Modal -->
+    <div class="modal fade" id="education-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h2 class="modal-title" id="myModalLabel">Education</h2>
+                </div>
+                <div class="modal-body">
+                    <h3>Northeastern University</h3>
+                    <h4>Masters in Computer Science</h4>
+                    <p>2020</p>
+                    <p>Accredited Master's program in computer science with a specialization in Machine Learning</p>
+                    <h3>The Iron Yard Academy</h3>
+                    <h4>Certificate of Completion</h4>
+                    <p>2014</p>
+                    <p>Three month intensive programming course that teaches HTML, CSS, and JavaScript with a focus on building
+                        production quality apps with robust, attractive, responsive interfaces. Noted skills learned were
+                        jQuery, underscore, backbone, Parse, HTML5, CSS3. There was a strong focus on design and good programming
+                        practices, and I also learned some back end functionality to make http requests and updates to various
+                        API structures, and do server functions to compound and restructure data.</p>
+                    <h3>Full Sail University</h3>
+                    <h4>B.A. in Creative Writing</h4>
+                    <p>2014</p>
+                    <p>Accelerated program in Creative Writing that focused on visual storytelling through short stories, scripts,
+                        and graphic mediums. I took classes on campus but finished my senior year online while living and
+                        writing in Baltimore, MD.</p>
+                </div>
+                <div class="modal-footer">
+                    <div data-replace="close-button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Freelance Modal -->
+    <div class="modal fade" id="work-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <h2 class="modal-title" id="myModalLabel">Work History</h2>
+                </div>
+                <div class="modal-body">
+                    <h3>Front End Standards and Architecture team lead</h3>
+                    <h4>Bank of America</h4>
+                    <ul>
+                        <li>Lead developer for the FESA team. We guide the coding patterns and standards to improve overall code
+                            quality, user experience, and reduce defect occurance.</li>
+                        <li>Work largely with developer facing tools and global modules (navigation, header, search, footer,
+                            accordions, inputs) that appear across all product lines.</li>
+                    </ul>
+                    <h3>Interaction Engineer</h3>
+                    <h4>Benefitfocus</h4>
+                    <ul>
+                        <li>Work between the UX group and shopping application to fix conflicts in core code during transition
+                            from legacy code to newer application code</li>
+                        <li>Implement client facing layout and functionality changes as well as updating internal functionality
+                            as legacy code is deprecated and the platform moves towards higher flexibility and optimization</li>
+                        <li>Daily work involves changes to Dust templates, styles in Less, specific helper functions in JQuery/JavaScript,
+                            and core engine changes in CoffeeScript and Underscore</li>
+                    </ul>
+                    <h3>Freelance Web Developer</h3>
+                    <h4>Michelin North America</h4>
+                    <ul>
+                        <li>Developed company side tools to manage customer profiles and track analytics, both through google
+                            analytics and custom datum tracking</li>
+                        <li>Built out settings for customers to manage shop information, relating both to consumer side appearance
+                            and scheduling logic</li>
+                        <li>Managed cloud code (server) functionality to handle consumer communications (email/text) and existing
+                            data updating and management</li>
+                        <li>Refactored/rebuilt website into a functionally similar but significantly different mobile application
+                            to Google Play store, including the creation of keystore and touch screen functionality using
+                            Adobe PhoneGap</li>
+                    </ul>
+                    <h4>OPlan</h4>
+                    <ul>
+                        <li>Architect and cofounder of inventory management system for NFA (federally) regulated items relating
+                            to the hunting/defense/firearms industry
+                        </li>
+                    </ul>
+                    <h4>HungerCrunch.com</h4>
+                    <ul>
+                        <li>Developed leaderboards with a team of three developers for a game with in app purchases that went
+                            directly to Rice Bowls, a charity feeding children around the world
+                        </li>
+                    </ul>
+                    <h3>United States Army</h3>
+                    <h4>Combat Engineer SPC</h4>
+                    <ul>
+                        <li>Completed AIT at Ft. Leonardwood MO in April of 2007 as a Combat Engineer (12B). Primary training
+                            revolved around the proper setting, execution, and disposal of friendly demolitions, as well
+                            as the detection and disposal of enemy explosives</li>
+                        <li>Trained and licensed for numerous vehicles, although I spent the most time driving an uparmored Humvee.
+                            I participated in multi vehicle convoys from eight to twelve hours in length, and have experience
+                            driving the lead vehicle in training exercises. Combat Life Saver Certified.</li>
+                        <li>Left the army in good standing after fulfilling my contract (six years in the U.S. Army Reserves,
+                            plus two years inactive)</li>
+                    </ul>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Sticky nav template -->
+    <script type="text/template" data-template="navbar-main-collapse">
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li data-iterate="listItem">
+                    <a class="page-scroll" href="{{href}}">{{text}}</a>
+                </li>
+            </ul>
+        </div>
+    </script>
+    <!-- Skills modal template -->
+    <script type="text/template" data-template="skills-modal">
+        <div class="modal fade" id="skills-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                            <span class="sr-only">Close</span>
+                        </button>
+                        <h3 class="modal-title" id="myModalLabel">Skills</h3>
+                    </div>
+                    <div class="modal-body skills-modal">
+                        <div data-iterate="skillIcon">
+                            <img src="{{src}}" aria-hidden="true">
+                            <h3>{{text}}</h3>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+    </script>
+    <!-- Contact Template -->
+    <script type="text/template" data-template="contact-section">
+        <section id="contact" class="container content-section text-center">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <span data-iterate="signoff">
+                        <h2>{{header}}</h2>
+                        <p>{{copy1}}</p>
+                        <p>Email me at
+                            <a href="{{emailHref}}">{{email}}</a>
+                        </p>
+                        <p>{{copy2}}</p>
+                    </span>
+                    <ul class="list-inline banner-social-buttons">
+                        <li data-iterate="listItem">
+                            <a href="{{href}}" class="btn btn-default btn-lg">
+                                <i class="fa fa-{{icon}} fa-fw" aria-label="{{icon}} icon"></i>
+                                <span class="network-name">{{text}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </script>
+    <!-- copy json -->
+    <script src="js/template-copy/copy.js"></script>
     <!-- jQuery Version 1.11.0 -->
     <script src="js/jquery-1.11.0.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
     <!-- Custom Theme JavaScript -->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
