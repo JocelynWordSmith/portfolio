@@ -29,10 +29,10 @@
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse" aria-label="navbar-toggle">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
+                <a class="navbar-brand page-scroll" href="#page-top" aria-label="scroll to top">
                     <i class="fa fa-arrow-circle-up"> </i>
                 </a>
             </div>
@@ -65,7 +65,7 @@
         <div class="about-section">
             <div class="container">
                 <div class="player-img">
-                    <img class="profile-img" src="img/stone_throw.jpg">
+                    <img class="profile-img" src="img/stone_throw.jpg" alt="Joshua Smith skipping a rock with coffee in hand">
                 </div>
                 <div class="player-stats">
                     <p>Player: Joshua Smith</p>
@@ -115,22 +115,22 @@
             <div class="container">
                 <h2>Portfolio</h2>
                 <div class="col-lg-8 col-lg-offset-2 game-box">
-                    <div role="button" class="mod-link-container">
-                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#hunger-modal">
+                    <button class="clean-button mod-link-container">
+                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#hunger-modal" alt="alien from the game space invader">
                         <span>Hunger Crunch</span>
-                    </div>
-                    <div role="button" class="mod-link-container">
-                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#bofa-modal">
+                    </button>
+                    <button class="clean-button mod-link-container">
+                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#bofa-modal" alt="alien from the game space invader">
                         <span>Bank of America</span>
-                    </div>
-                    <div role="button" class="mod-link-container">
-                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal">
+                    </button>
+                    <button class="clean-button mod-link-container">
+                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal" alt="alien from the game space invader">
                         <span>Michelin</span>
-                    </div>
-                    <div role="button" class="mod-link-container">
-                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#oplan-modal">
+                    </button>
+                    <button class="clean-button mod-link-container">
+                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#oplan-modal" alt="alien from the game space invader">
                         <span>Oplan</span>
-                    </div>
+                    </button>
                 </div>
                 <div id="ship-bound">
                     <img id="ship" src="img/ship.png" aria-hidden="true">
@@ -145,9 +145,9 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Work History Map</h2>
                     <div class="education">
-                        <img src="img/school.png" class="school-icon" data-toggle="modal" data-target="#education-modal" alt="education layer trigger">
-                        <img src="img/freelance.png" class="work-icon" data-toggle="modal" data-target="#work-modal" alt="work history layer trigger">
-                        <img src="img/skills.png" class="skills-icon" data-toggle="modal" data-target="#skills-modal" alt="skills layer trigger">
+                        <button class="clean-button" aria-label="education layer trigger" data-toggle="modal" data-target="#education-modal"><img src="img/school.png" class="school-icon" alt="illustration of a continent"></button>
+                        <button class="clean-button" aria-label="work history layer trigger" data-toggle="modal" data-target="#work-modal"><img src="img/freelance.png" class="work-icon" alt="illustration of a continent"></button>
+                        <button class="clean-button" aria-label="skills layer trigger" data-toggle="modal" data-target="#skills-modal"><img src="img/skills.png" class="skills-icon" alt="illustration of a ship"></button>
                     </div>
                 </div>
             </div>
@@ -197,20 +197,20 @@
                         a web app for a game called hunger crunch. The game can currently be found at the
                         <a href="http://www.hungercrunch.com/">Hunger Crunch</a> website, or on the iOS App Store. The app is scheduled to get a test run with about
                         700 users in September of 2014, after which it will go live for regular use.</p>
-                    <img src="img/hc1.png" class="mod-image" alt="hunger cruch website screen capture">
+                    <img src="img/hc1.jpg" class="mod-image" alt="hunger cruch website screen capture">
                     <p>The team I worked with was given designs to help us stay in line with the existing site's styles, and
                         we used
                         <a href="http://www.parse.com">parse.com</a> to manage our data, so all the information displayed is live and dynamic.</p>
-                    <img src="img/hc2.png" class="mod-image" alt="hunger cruch website screen capture">
+                    <img src="img/hc2.jpg" class="mod-image" alt="hunger cruch website screen capture">
                     <p>The purpose of the app is to give youth group leaders and teachers a way of managing tournament scores
                         based on the incoming player data in the game, as well as a way to manage what players were in which
                         groups in order to have competitions betweens grades or small groups.</p>
-                    <img src="img/hc3.png" class="mod-image" alt="hunger cruch website screen capture">
+                    <img src="img/hc3.jpg" class="mod-image" alt="hunger cruch website screen capture">
                     <p>The languages used were HTML, CSS (scss), and JavaScript, and were supported by jQuery, Underscore, and
                         Parse (a backbone derivative). List.js was used to manage list filtering, and pickadate.js was used
                         for interactive calendars to choose start and end dates for the tournaments. Modernizer and sass
                         were also used.</p>
-                    <img src="img/hc4.png" class="mod-image" alt="hunger cruch website screen capture">
+                    <img src="img/hc4.jpg" class="mod-image" alt="hunger cruch website screen capture">
                     <ul class="list-inline banner-social-buttons">
                         <li data-replace="contact-link"></li>
                         <li>
@@ -256,14 +256,14 @@
                     <p>Michelin hired me to work with their incubator team to help build a new product called myMechanic, which
                         was basically open table but for mechanic shops, so that people could easily schedule car repairs,
                         and so the shops could manage their appointments internally</p>
-                    <img src="img/mymechanic-splash.png" class="mod-image" alt="my mechanic website screen capture">
+                    <img src="img/mymechanic-splash.jpg" class="mod-image" alt="my mechanic website screen capture">
                     <p>This is an early version of the scheduling interface, as seen by a mechanic's shop</p>
-                    <img src="img/mymechanic-schedule.png" class="mod-image" alt="my mechanic website screen capture">
+                    <img src="img/mymechanic-schedule.jpg" class="mod-image" alt="my mechanic website screen capture">
                     <p>The admin page the majority of my responsibility outside of the mobile app, and it tracked the payment
                         standing of the shops, and gave the non developers on the team the ability to disable and enable
                         shops easily for use violations or payment issues. For the charts I used OOcharts.js which interprets
                         google analytics and I thought looked more in line with our app than the standard google charts.</p>
-                    <img src="img/mymechanic-admin.png" class="mod-image" alt="my mechanic website screen capture">
+                    <img src="img/mymechanic-admin.jpg" class="mod-image" alt="my mechanic website screen capture">
                     <ul class="list-inline banner-social-buttons">
                         <li data-replace="contact-link"></li>
                         <li>
@@ -311,14 +311,14 @@
                     <p>For this application flow, I utilized redux and handlebars for our state management and rendering complextity
                         as the user moves through the application process. There is a variable amount of pages each with
                         dynamic content based on previous selections.</p>
-                    <img src="img/small-biz-app.png" class="mod-image" alt="bank of america small business application website screen capture">
+                    <img src="img/small-biz-app.jpg" class="mod-image" alt="bank of america small business application website screen capture">
                     <p>The research (non application) pages were largely what I worked on before I moved over to macro level
                         work on shared components.</p>
-                    <img src="img/core-checking.png" class="mod-image" alt="bank of america core checking website screen capture">
+                    <img src="img/core-checking.jpg" class="mod-image" alt="bank of america core checking website screen capture">
                     <p>The work I have done has made it on to nearly every responsive product page, and the effort to convert
                         legacy pages into the new reponsive format is ongoing. It's pretty rad knowing that a few million
                         people have interacted with things that you made.</p>
-                    <img src="img/auto-loan-rates.png" class="mod-image" alt="bank of america auto loan website screen capture">
+                    <img src="img/auto-loan-rates.jpg" class="mod-image" alt="bank of america auto loan website screen capture">
                     <ul class="list-inline banner-social-buttons">
                         <li data-replace="contact-link"></li>
                         <li>
@@ -356,16 +356,16 @@
                     </ul>
                     <p>Oplan (operations plan) was a specialty inventory management system that made it easier to track when,
                         where, and who was purchasing and selling federeally regulated firearms and accesories.</p>
-                    <img src="img/oplan-scan.png" class="mod-image" alt="oplan inventory website screen capture">
+                    <img src="img/oplan-scan.jpg" class="mod-image" alt="oplan inventory website screen capture">
                     <p>This is the customer page, where you can add new customers or search for an existing one and start an
                         order. Due to the nature of the industry, it is required that all customer information be saved.</p>
-                    <img src="img/oplan-customers.png" class="mod-image" alt="oplan inventory website screen capture">
+                    <img src="img/oplan-customers.jpg" class="mod-image" alt="oplan inventory website screen capture">
                     <p>Here is the inventory page, which updates with live totals from the server, and also has editing functionality
                         for when prices change or new items come into stock</p>
-                    <img src="img/oplan-inventory.png" class="mod-image" alt="oplan inventory website screen capture">
+                    <img src="img/oplan-inventory.jpg" class="mod-image" alt="oplan inventory website screen capture">
                     <p>This is an example invoice, and can either be printed or saved as a pdf. The output looks different from
                         the page as to be in line with the invoice forms the shop is accustomed to.</p>
-                    <img src="img/oplan-invoice.png" class="mod-image" alt="oplan inventory website screen capture">
+                    <img src="img/oplan-invoice.jpg" class="mod-image" alt="oplan inventory website screen capture">
                     <p>The site is currently live, but is in Alpha testing and requires a log in. If you would like more specific
                         information just let me know, I would be happy to chat.</p>
                     <ul class="list-inline banner-social-buttons">

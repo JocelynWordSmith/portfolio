@@ -41,7 +41,15 @@ p {
     font-size: 18px;
     line-height: 1.5;
 }
-
+.clean-button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
@@ -111,8 +119,10 @@ a:focus {
 .mod-link {
     margin-left: -10px;
 }
-
-.mod-link:hover {
+.mod-link-container:focus, [data-toggle="modal"]:focus {
+    outline: 1px solid #EDF0F5;
+}
+.mod-link-container:hover, .mod-link-container:focus, [data-toggle="modal"]:hover, [data-toggle="modal"]:focus {
     transform: translateY(-.3em);
     transition-duration: 0.2s;
 }
