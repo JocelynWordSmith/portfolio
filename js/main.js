@@ -29,6 +29,7 @@ $(function() {
 });
 
 $(document).ready(function(){
+    processJSONContent();
 
     var shipX = 0;
     var shipM = 0;
@@ -36,18 +37,16 @@ $(document).ready(function(){
 
     var tallness = $(window).height();
     $('#buffer-fix').css('min-height', (tallness/2.2));
-    
     $(window).resize(function() {
         var tallness = $(window).height();
         $('#buffer-fix').css('min-height', (tallness/2.2));
     });
-
-    $(window).mousemove(function(e){
+    $('#portfolio').mousemove(function(e){
         shipX = e.pageX;
         var buff = $(window).width()/8;
         shipM = (shipX - buff);
         $('#ship').css('margin-left', shipM );
-    })
+    });
 
     $('.mod-link').click(function(){
         $('#ship-bound').append('<div id="bullet" class="bullet" style="left:' + (shipM + 52)  + 'px;"></div>');
@@ -57,9 +56,7 @@ $(document).ready(function(){
             // Animation complete.
             $('#bullet').remove()
           });
-    })
-
-    processJSONContent();
+    });
 });
 
 const insertAfter = function(newNode, referenceNode) {
