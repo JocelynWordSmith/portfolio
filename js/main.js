@@ -159,6 +159,9 @@ const processJSONContent = function () {
 };
 
 const handleInput = function() {
+    let shipX = 0;
+    let shipM = 0;
+
     // collapse the navbar on scroll
     window.addEventListener('scroll', function () {
         if (document.documentElement.scrollTop > 50) {
@@ -167,12 +170,10 @@ const handleInput = function() {
             navbar.classList.remove('top-nav-collapse');
         }
     });
-    var shipX = 0;
-    var shipM = 0;
 
     document.getElementById('portfolio').addEventListener('mousemove', function (e) {
         shipX = e.pageX;
-        var buff = $(window).width() / 8;
+        const buff = $(window).width() / 8;
         shipM = (shipX - buff);
         document.getElementById('ship').style.marginLeft = shipM + 'px';
     });
@@ -188,7 +189,6 @@ const handleInput = function() {
         });
     });
 }
-// document.addEventListener('DOMContentLoaded', handleInput);
-// processJSONContent();
-window.handleInput = handleInput;
-window.processJSONContent = processJSONContent;
+
+document.addEventListener('DOMContentLoaded', handleInput);
+processJSONContent();
