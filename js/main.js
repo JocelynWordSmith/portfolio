@@ -157,7 +157,7 @@ const processJSONContent = function () {
         node.parentNode.removeChild(node);
     });
 };
-// processJSONContent();
+processJSONContent();
 document.addEventListener('DOMContentLoaded', function () {
     // collapse the navbar on scroll
     window.addEventListener('scroll', function () {
