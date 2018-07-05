@@ -157,8 +157,8 @@ const processJSONContent = function () {
         node.parentNode.removeChild(node);
     });
 };
-processJSONContent();
-document.addEventListener('DOMContentLoaded', function () {
+
+const handleInput = function() {
     // collapse the navbar on scroll
     window.addEventListener('scroll', function () {
         if (document.documentElement.scrollTop > 50) {
@@ -187,4 +187,8 @@ document.addEventListener('DOMContentLoaded', function () {
             move(bullet, 0);
         });
     });
-});
+}
+// document.addEventListener('DOMContentLoaded', handleInput);
+// processJSONContent();
+window.handleInput = handleInput;
+window.processJSONContent = processJSONContent;
