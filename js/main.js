@@ -64,7 +64,7 @@ const dataReplace = [{
             "src": "img/lantern.png",
             "text": "Backbone"
         }, {
-            "src": "img/heart-container.png",
+            "src": "img/heart-container-3-4.png",
             "text": "Redux"
         }, {
             "src": "img/boss-key.png",
