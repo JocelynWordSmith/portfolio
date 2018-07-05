@@ -62,7 +62,7 @@ p {
 }
 
 a {
-    color: #219ab3;
+    color: #11505d;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -70,7 +70,7 @@ a {
 
 a:hover,
 a:focus {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #11505d;
 }
 
