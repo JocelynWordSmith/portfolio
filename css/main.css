@@ -101,9 +101,8 @@ a:focus {
     text-align: center;
     top: 100%;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    /* font-size: 30px; */
-    font-weight: 100;
-    font-size: 14px;
+    font-size: 22px;
+    font-weight: 400;
     left: 0;
 }
 
@@ -489,6 +488,8 @@ a:focus {
         -webkit-text-fill-color: white;
         -webkit-text-stroke: 2px black;
         font-weight: bold;
+        line-height: 1.2;
+        text-transform: uppercase;
     }
 }
 
