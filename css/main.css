@@ -13,7 +13,7 @@ body {
     min-width: 300px;
 }
 .profile-img {
-    width: 250px;
+    width: 320px;
     border-radius: 5%;
 }
 
@@ -460,6 +460,11 @@ a:focus {
     .profile-img {
         margin-left: 7%;
         width: 86%;
+    }
+}
+@media(min-width:1000px) {
+    .player-img {
+        padding-left: 20%;
     }
 }
 
