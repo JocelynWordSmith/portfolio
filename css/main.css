@@ -136,6 +136,9 @@ a:focus {
     text-align: left;
 }
 
+.player-stats img {
+    max-width: 35px;
+}
 .player-stats {
     margin-top: 2%;
     margin-left: 8%;
