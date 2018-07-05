@@ -15,7 +15,7 @@ const move = function(elem, bottom) {
         if (bottom < 500) {
             move(elem, bottom);
         } else {
-            elem.parentNode.remove();
+            elem.parentNode.removeChild(elem);
         }
     }, 5);
 };
