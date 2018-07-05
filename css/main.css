@@ -12,7 +12,6 @@ body {
     background-color: #F0F1F5;
     min-width: 300px;
 }
-
 .profile-img {
     width: 250px;
     border-radius: 5%;
@@ -29,14 +28,18 @@ h3,
 h4,
 h5,
 h6 {
+    color: #2B303B;
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
-
+li {
+    color: #2B303B;
+}
 p {
+    color: #2B303B;
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
@@ -292,6 +295,9 @@ a:focus {
     vertical-align: middle;
     padding-top: 50px;
 }
+.intro p {
+    color: #fff;
+}
 
 /*.brand-heading {
     background-color: rgba(255,255,255,.3);
@@ -541,6 +547,9 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
 }
+.banner-social-buttons span {
+    color: #2B303B;
+}
 
 footer {
     padding: 50px 0;
@@ -599,4 +608,14 @@ body {
     position: relative;
     /*z-index: 1150;*/
     /*position: fixed;*/
+}
+.container h2 {
+    color: #fff;
+}
+.content-section h2 {
+    color: #2B303B;
+}
+.download-section h2,
+.resume-section h2 {
+    color: #fff;
 }
