@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const bullet = document.createElement('div');
             bullet.setAttribute('class', 'bullet');
             bullet.setAttribute('style', 'left:' + (shipM + 52)  + 'px;');
-            // const bulletString = '<div id="bullet" class="bullet" style="left:' + (shipM + 52)  + 'px;"></div>';
             ship.appendChild(bullet);
             move(bullet, 0);
         });
@@ -90,5 +89,8 @@ const processJSONContent = function() {
         } else {
             injectInDom(item);
         }
+    });
+    [].forEach.call(document.querySelectorAll('[data-replace]'), function(node) {
+        node.parentNode.removeChild(node);
     });
 };

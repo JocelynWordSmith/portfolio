@@ -1,6 +1,6 @@
 window.dataReplace = [{
         "type": "contact-link",
-        "content": "<a href=\"mailto:joshuawordsmith@gmail.com\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-envelope fa-fw\"></i><span class=\"network-name\">Contact Josh</span></a>"
+        "content": "<li><a href=\"mailto:joshuawordsmith@gmail.com\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-envelope fa-fw\"></i><span class=\"network-name\">Contact Josh</span></a></li>"
     }, {
         "type": "close-button",
         "content": "<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>"
