@@ -159,8 +159,8 @@ a:focus {
 }
 
 .skills-icon {
+    display: block;
     width: 75px;
-    margin-right: 200px;
 }
 
 .education img {
@@ -175,7 +175,7 @@ a:focus {
     -o-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
     border-image: url(../img/blue-border.png) 30 38 28 45 fill stretch;
     /*height: 750px;*/
-    padding: 5%;
+    padding: 2%;
     background-color: #EDF0F5;
     margin-top: 2%;
     text-align: center;
@@ -183,7 +183,8 @@ a:focus {
 .skills-modal div {
     display: inline-block;
     width: 92%;
-    min-width: 150px;
+    min-width: 140px;
+    padding-bottom: 20px;
     text-align: center;
 }
 .skills-modal h3 {
@@ -331,7 +332,7 @@ a:focus {
 
 @media(min-width:767px) {
     .skills-icon {
-        margin-right: 300px;
+        /* margin-right: 300px; */
     }
     .intro {
         height: 100%;
@@ -463,6 +464,9 @@ a:focus {
 }
 
 @media(min-width:767px) {
+    .player-stats {
+        margin-top: 0;
+    }
     .intro .intro-body {
         padding-bottom: 40px;
     }
@@ -493,6 +497,15 @@ a:focus {
     background-repeat: repeat-y;
     background-position: top center;
     background-attachment: fixed;
+}
+.resume-section .clean-button {
+    overflow: hidden;
+}
+[data-target="#education-modal"]{
+    max-height: 205px;
+}
+[data-target="#skills-modal"]{
+    display: block;
 }
 
 @media(min-width:767px) {
@@ -595,6 +608,13 @@ body {
 .modal-body p {
     padding-top: 4px;
     margin-top: 8px;
+}
+
+.modal-body h3 {
+    margin-bottom: 10px;
+}
+.modal-body ul {
+    margin-bottom: 40px;
 }
 
 .modal-body>h4 {
