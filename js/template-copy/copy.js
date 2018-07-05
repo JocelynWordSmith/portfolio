@@ -52,6 +52,9 @@ window.dataReplace = [{
                 "src": "img/bow.png",
                 "text": "HTML5/CSS3"
             }, {
+                "src": "img/net.png",
+                "text": "jQuery"
+            }, {
                 "src": "img/boomerang.png",
                 "text": "Underscore"
             }, {
@@ -60,9 +63,6 @@ window.dataReplace = [{
             }, {
                 "src": "img/lantern.png",
                 "text": "Backbone"
-            }, {
-                "src": "img/net.png",
-                "text": "jQuery"
             }, {
                 "src": "img/heart-container.png",
                 "text": "Redux"
