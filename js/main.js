@@ -1,3 +1,4 @@
+// TODO: move all of this into seperate JSON content files
 const dataReplace = [{
     "type": "contact-link",
     "content": "<li><a href=\"mailto:joshuawordsmith@gmail.com\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-envelope fa-fw\"></i><span class=\"network-name\">Contact Josh</span></a></li>"
@@ -93,7 +94,7 @@ const dataReplace = [{
         }]
     }
 }];
-//  console.log("There shouldn't be any errors down here, but if there are they were totally on purpose. And while I didn't add it to my portfolio, I made this site by building on a Bootstrap template. The space and water images are from unsplash.com, but I made pretty much all the icons and the top logo. Cheers. -Joshua Smith")
+// animates the bottom border or an element
 const move = function (elem, bottom) {
     setTimeout(function () {
         bottom += 10;
@@ -105,46 +106,54 @@ const move = function (elem, bottom) {
         }
     }, 5);
 };
+// vanilla append
 const insertAfter = function (newNode, referenceNode) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 };
+// turn a string into a DOM node
 const domSwap = function (nodeString, referenceNode) {
     const tempNode = document.createElement('span');
     tempNode.innerHTML = nodeString;
     const newNode = tempNode.firstElementChild;
     insertAfter(newNode, referenceNode);
 };
+// map deataReplace objects to their DOM targets
 const injectInDom = function (item) {
     [].forEach.call(document.querySelectorAll('[data-replace="' + item.type + '"]'), (element) => {
         domSwap(item.content, element);
     });
 };
+// the thing being replaced
 const makeTag = function (key) {
     return '{{' + key + '}}';
 };
-const iterateTemplateContent = function (wrapper, templateData, templateChunk) {
+// 
+const iterateTemplateContent = function (templateData, templateChunk) {
     const chunkString = templateChunk.outerHTML;
     templateData.forEach(function (content) {
         let stringCopy = chunkString;
         Object.keys(content).forEach(function (contentKey) {
-            stringCopy = stringCopy.replace(makeTag(contentKey), content[contentKey]);
+            const targetSubStr = new RegExp(makeTag(contentKey), "g");
+            stringCopy = stringCopy.replace(targetSubStr, content[contentKey]);
         });
         stringCopy.replace('data-iterate', '');
         domSwap(stringCopy, templateChunk);
     });
     templateChunk.remove();
 };
+// create dynamic elements to inject into page
 const renderTemplate = function (templateData) {
     const wrapper = document.createElement('div');
     wrapper.innerHTML = document.querySelector('[data-template="' + templateData.dataTemplate + '"]').innerHTML;
     Object.keys(templateData.content).forEach(function (contentKey) {
         const templateChunk = wrapper.querySelector('[data-iterate="' + contentKey + '"]');
-        iterateTemplateContent(wrapper, templateData.content[contentKey], templateChunk);
+        iterateTemplateContent(templateData.content[contentKey], templateChunk);
     });
     [].forEach.call(document.querySelectorAll('[data-replace="' + templateData.dataTemplate + '"]'), (element) => {
         insertAfter(wrapper, element);
     });
 };
+// this is currently just a hacky templater. I want to make it into my own mini templating library, but haven't had time
 const processJSONContent = function () {
     dataReplace.forEach((item) => {
         if (item.dataTemplate) {
@@ -157,7 +166,7 @@ const processJSONContent = function () {
         node.parentNode.removeChild(node);
     });
 };
-
+// this sets up listener events for user interaction
 const handleInput = function() {
     let shipX = 0;
     let shipM = 0;
