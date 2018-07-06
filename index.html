@@ -111,22 +111,26 @@
             <div class="container">
                 <h2>Portfolio</h2>
                 <div class="col-lg-8 col-lg-offset-2 game-box">
-                    <button class="clean-button mod-link-container">
-                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#bofa-modal" alt="alien from the game space invader">
-                        <span>Bank of America</span>
-                    </button>
-                    <button class="clean-button mod-link-container">
-                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal" alt="alien from the game space invader">
-                        <span>Michelin</span>
-                    </button>
-                    <button class="clean-button mod-link-container">
-                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#hunger-modal" alt="alien from the game space invader">
-                        <span>Hunger Crunch</span>
-                    </button>
-                    <button class="clean-button mod-link-container">
-                        <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#oplan-modal" alt="alien from the game space invader">
-                        <span>Oplan</span>
-                    </button>
+                    <div class="col-sm-12 col-md-6">
+                        <button class="clean-button mod-link-container">
+                            <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#bofa-modal" alt="alien from the game space invader">
+                            <div>Bank of America</div>
+                        </button>
+                        <button class="clean-button mod-link-container">
+                            <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal" alt="alien from the game space invader">
+                            <div>Michelin</div>
+                        </button>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <button class="clean-button mod-link-container">
+                            <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#hunger-modal" alt="alien from the game space invader">
+                            <div>Hunger Crunch</div>
+                        </button>
+                        <button class="clean-button mod-link-container">
+                            <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#oplan-modal" alt="alien from the game space invader">
+                            <div>Oplan</div>
+                        </button>
+                    </div>
                 </div>
                 <div id="ship-bound">
                     <img id="ship" src="img/ship.png" aria-hidden="true">
@@ -141,9 +145,15 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <h2>Work History Map</h2>
                     <div class="education">
-                        <button class="clean-button" aria-label="education layer trigger" data-toggle="modal" data-target="#education-modal"><img src="img/school.png" class="school-icon" alt="illustration of a continent"></button>
-                        <button class="clean-button" aria-label="work history layer trigger" data-toggle="modal" data-target="#work-modal"><img src="img/freelance.png" class="work-icon" alt="illustration of a continent"></button>
-                        <button class="clean-button" aria-label="skills layer trigger" data-toggle="modal" data-target="#skills-modal"><img src="img/skills.png" class="skills-icon" alt="illustration of a ship"></button>
+                        <button class="clean-button" aria-label="education layer trigger" data-toggle="modal" data-target="#education-modal">
+                            <img src="img/school.png" class="school-icon" alt="illustration of a continent">
+                        </button>
+                        <button class="clean-button" aria-label="work history layer trigger" data-toggle="modal" data-target="#work-modal">
+                            <img src="img/freelance.png" class="work-icon" alt="illustration of a continent">
+                        </button>
+                        <button class="clean-button" aria-label="skills layer trigger" data-toggle="modal" data-target="#skills-modal">
+                            <img src="img/skills.png" class="skills-icon" alt="illustration of a ship">
+                        </button>
                     </div>
                 </div>
             </div>
@@ -546,7 +556,8 @@
         </section>
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Custom Theme JavaScript -->

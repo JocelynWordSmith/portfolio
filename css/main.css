@@ -89,19 +89,18 @@ a:focus {
 
 .mod-link-container {
     cursor: pointer;
-    width: 25%;
+    width: 49%;
     position: relative;
-    float: left;
+    display: inline-block;
 }
 
-.mod-link-container span {
+.mod-link-container div {
     pointer-events: none;
-    position: absolute;
     width: 100%;
     text-align: center;
     top: 100%;
     font-family: 'Press Start 2P', Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     left: 0;
 }
@@ -113,8 +112,9 @@ a:focus {
 }
 
 @media(min-width:767px) {
-    .mod-link-container span {
+    .mod-link-container div {
         top: 70%;
+        position: absolute;
     }
 }
 
@@ -176,7 +176,6 @@ a:focus {
     -webkit-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
     -o-border-image: url(../img/blue-border.png) 30 38 28 45 stretch;
     border-image: url(../img/blue-border.png) 30 38 28 45 fill stretch;
-    /*height: 750px;*/
     padding: 2%;
     background-color: #EDF0F5;
     margin-top: 2%;
@@ -184,8 +183,7 @@ a:focus {
 }
 .skills-modal div {
     display: inline-block;
-    width: 92%;
-    min-width: 140px;
+    width: 49%;
     padding-bottom: 20px;
     text-align: center;
 }
@@ -329,6 +327,7 @@ a:focus {
 @media(min-width:410px) {
     .skills-modal div {
         width: 20%;
+        min-width: 145px;
     }
 }
 
@@ -456,9 +455,6 @@ a:focus {
     .work-icon {
         width: 35%;
     }
-    .game-box {
-        height: 175px;
-    }
     .profile-img {
         margin-left: 7%;
         width: 86%;
@@ -468,9 +464,15 @@ a:focus {
     .player-img {
         padding-left: 20%;
     }
+    .mod-link-container div {
+        font-size: 22px;
+    }
 }
 
 @media(min-width:767px) {
+    .col-md-6 {
+        width: 50%;
+    }
     .player-stats {
         margin-top: 0;
     }
@@ -486,8 +488,7 @@ a:focus {
     .profile-img {
         margin-bottom: 50px;
     }
-    .mod-link-container span {
-        font-size: 22px;
+    .mod-link-container div {
         -webkit-text-fill-color: white;
         -webkit-text-stroke: 1px black;
         font-weight: bold;
