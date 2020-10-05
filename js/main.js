@@ -33,10 +33,6 @@ const dataReplace = [{
             "href": "https://github.com/JoshuaWordSmith",
             "icon": "github",
             "text": "Github"
-        }, {
-            "href": "https://twitter.com/Joshuawordsmith",
-            "icon": "twitter",
-            "text": "Twitter"
         }],
         "signoff": [{
             "header": "Contact Joshua Smith",
@@ -51,40 +47,40 @@ const dataReplace = [{
     "content": {
         "skillIcon": [{
             "src": "img/bow.png",
-            "text": "HTML5/CSS3"
+            "text": "ES6/HTML5/CSS3"
         }, {
             "src": "img/net.png",
-            "text": "jQuery"
+            "text": "Python3"
         }, {
             "src": "img/boomerang.png",
-            "text": "Underscore"
+            "text": "React"
         }, {
             "src": "img/bomb.png",
-            "text": "JavaScript\nES6"
+            "text": "Jenkins"
         }, {
             "src": "img/lantern.png",
-            "text": "Backbone"
+            "text": "Pandas"
         }, {
             "src": "img/heart-container-3-4.png",
             "text": "Redux"
         }, {
             "src": "img/boss-key.png",
-            "text": "Less/SCSS"
+            "text": "Unit testing"
         }, {
             "src": "img/sword-down.png",
-            "text": "Dust.js"
+            "text": "CI/CD"
         }, {
             "src": "img/chest.png",
-            "text": "Handlebars"
+            "text": "Webpack"
         }, {
             "src": "img/red-pot.png",
-            "text": "iTerm/Zsh"
+            "text": "Bash/Zsh"
         }, {
             "src": "img/green-pot.png",
-            "text": "Sourcetree"
+            "text": "Typescript"
         }, {
             "src": "img/blue-pot.png",
-            "text": "Git/Github"
+            "text": "Unix Shell"
         }, {
             "src": "img/sheild.png",
             "text": "ADA"
