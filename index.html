@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Joshua Smith is a kick ass web developer that wants to make stuff for you. If you already have stuff, he love to help make it better.">
+    <meta name="description" content="Joshua Smith is a kick ass software engineer that wants to make stuff for you. If you already have stuff, he'd love to help make it better.">
     <meta name="author" content="Joshua Smith">
     <title>Joshua Smith's Portfolio</title>
     <!-- Bootstrap Core CSS -->
@@ -65,7 +65,7 @@
                 </div>
                 <div class="player-stats">
                     <p>Player: Joshua Smith</p>
-                    <p>Level: 30</p>
+                    <p>XP: <progress id="file" max="10000" value="8000"> 80% </progress></p>
                     <p aria-label="health bar">Health:
                         <img src="img/heart-icon.png" alt="video game heart">
                         <img src="img/heart-icon.png" alt="video game heart">
@@ -112,18 +112,14 @@
                     <div class="col-sm-12">
                         <button class="clean-button mod-link-container">
                             <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#ally-modal" alt="alien from the game space invader">
-                            <div>Ally Bank EP&R</div>
+                            <div>Ally</div>
                         </button>
                         <button class="clean-button mod-link-container">
                             <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#bofa-modal" alt="alien from the game space invader">
-                            <div>Bank of America</div>
+                            <div>BofA</div>
                         </button>
                     </div>
                     <div class="col-sm-12">
-                        <button class="clean-button mod-link-container">
-                            <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal" alt="alien from the game space invader">
-                            <div>Michelin</div>
-                        </button>
                         <button class="clean-button mod-link-container">
                             <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#hunger-modal" alt="alien from the game space invader">
                             <div>Hunger Crunch</div>
@@ -131,6 +127,10 @@
                         <button class="clean-button mod-link-container">
                             <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#oplan-modal" alt="alien from the game space invader">
                             <div>Oplan</div>
+                        </button>
+                        <button class="clean-button mod-link-container">
+                            <img src="img/invader.png" class="mod-link" data-toggle="modal" data-target="#michelin-modal" alt="alien from the game space invader">
+                            <div>Michelin</div>
                         </button>
                     </div>
                 </div>
@@ -146,16 +146,16 @@
             <div class="container">
                 <div class="">
                     <h2>Experience</h2>
-                    <div class="education container">
-                        <button class="clean-button col-sm-6" aria-label="education layer trigger" data-toggle="modal" data-target="#education-modal">
+                    <div class="experience container">
+                        <button class="clean-button col-sm-6 education" aria-label="education layer trigger" data-toggle="modal" data-target="#education-modal">
                             <h3>Education</h3>
                             <img src="img/school.png" class="school-icon" alt="illustration of a continent">
                         </button>
-                        <button class="clean-button col-sm-6" aria-label="work history layer trigger" data-toggle="modal" data-target="#work-modal">
+                        <button class="clean-button col-sm-6 work-history" aria-label="work history layer trigger" data-toggle="modal" data-target="#work-modal">
                             <h3>Work History</h3>
                             <img src="img/freelance.png" class="work-icon" alt="illustration of a continent">
                         </button>
-                        <button class="clean-button" aria-label="skills layer trigger" data-toggle="modal" data-target="#skills-modal">
+                        <button class="clean-button skills" aria-label="skills layer trigger" data-toggle="modal" data-target="#skills-modal">
                             <h3>skills</h3>
                             <img src="img/skills.png" class="skills-icon" alt="illustration of a ship">
                         </button>
@@ -189,21 +189,6 @@
                     <h4 class="modal-title" id="hcModalLabel">Hunger Crunch</h4>
                 </div>
                 <div class="modal-body">
-                    <ul class="list-inline banner-social-buttons">
-                        <li data-replace="contact-link"></li>
-                        <li>
-                            <a href="https://github.com/jeffdill2/hunger-crunch-tournament" class="btn btn-default btn-lg">
-                                <i class="fa fa-github fa-fw" aria-label="github icon"></i>
-                                <span class="network-name">View Code</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.hungercrunch.com/tournaments/" class="btn btn-default btn-lg">
-                                <i class="fa fa-shield fa-fw" aria-label="sheild icon"></i>
-                                <span class="network-name">Live Site</span>
-                            </a>
-                        </li>
-                    </ul>
                     <p class="modal-body-text">As my final project for the development class I took at The Iron Yard Academy in Greenville, SC, I developed
                         a web app for a game called hunger crunch. The game can currently be found at the
                         <a href="http://www.hungercrunch.com/">Hunger Crunch</a> website, or on the iOS App Store. The app is scheduled to get a test run with about
@@ -224,18 +209,6 @@
                     <img src="img/hc4.jpg" class="mod-image" alt="hunger cruch website screen capture">
                     <ul class="list-inline banner-social-buttons">
                         <li data-replace="contact-link"></li>
-                        <li>
-                            <a href="https://github.com/jeffdill2/hunger-crunch-tournament" class="btn btn-default btn-lg">
-                                <i class="fa fa-github fa-fw" aria-label="github icon"></i>
-                                <span class="network-name">View Code</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://www.hungercrunch.com/tournaments/" class="btn btn-default btn-lg">
-                                <i class="fa fa-shield fa-fw" aria-label="shield icon"></i>
-                                <span class="network-name">Live Site</span>
-                            </a>
-                        </li>
                     </ul>
 
                 </div>
@@ -255,15 +228,6 @@
                     <h4 class="modal-title" id="michelinModalLabel">Michelin North America</h4>
                 </div>
                 <div class="modal-body">
-                    <ul class="list-inline banner-social-buttons">
-                        <li data-replace="contact-link"></li>
-                        <li>
-                            <a href="http://mymechanicapp.com" class="btn btn-default btn-lg">
-                                <i class="fa fa-shield fa-fw" aria-label="shield icon"></i>
-                                <span class="network-name">Live Site</span>
-                            </a>
-                        </li>
-                    </ul>
                     <p class="modal-body-text">Michelin hired me to work with their incubator team to help build a new product called myMechanic, which
                         was basically open table but for mechanic shops, so that people could easily schedule car repairs,
                         and so the shops could manage their appointments internally</p>
@@ -277,12 +241,6 @@
                     <img src="img/mymechanic-admin.jpg" class="mod-image" alt="my mechanic website screen capture">
                     <ul class="list-inline banner-social-buttons">
                         <li data-replace="contact-link"></li>
-                        <li>
-                            <a href="http://mymechanicapp.com" class="btn btn-default btn-lg">
-                                <i class="fa fa-shield fa-fw"></i>
-                                <span class="network-name">Live Site</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <div class="modal-footer"></div>
@@ -301,15 +259,6 @@
                     <h4 class="modal-title" id="bofaModalLabel">Bank of America</h4>
                 </div>
                 <div class="modal-body">
-                    <ul class="list-inline banner-social-buttons">
-                        <li data-replace="contact-link"></li>
-                        <li>
-                            <a href="https://www.bankofamerica.com/deposits/checking/personal-checking-account/" class="btn btn-default btn-lg">
-                                <i class="fa fa-shield fa-fw"></i>
-                                <span class="network-name">Live Site</span>
-                            </a>
-                        </li>
-                    </ul>
                     <p>I built reusable components that are shared across all digital sales sites. Things like focus management
                         utilities for screen readers, input validation and formatting that actually works properly with android
                         keyboards, a reusable template library that made rapid page deployment much easier, and updates to
@@ -356,15 +305,6 @@
                     <h4 class="modal-title" id="allyModalLabel">Ally Bank</h4>
                 </div>
                 <div class="modal-body">
-                    <ul class="list-inline banner-social-buttons">
-                        <li data-replace="contact-link"></li>
-                        <li>
-                            <a href="https://secure.ally.com/products-and-rates/" class="btn btn-default btn-lg">
-                                <i class="fa fa-shield fa-fw"></i>
-                                <span class="network-name">Live Site (requires account)</span>
-                            </a>
-                        </li>
-                    </ul>
                     <p class="modal-body-text">The explore products and rates project was the first project at ally using React or AWS Lambda. I was the tech lead for the project,
                         and the components were built as widgets that could be loaded into the legacy web application or the native application.
                     </p>
@@ -384,12 +324,6 @@
                     </p>
                     <ul class="list-inline banner-social-buttons">
                         <li data-replace="contact-link"></li>
-                        <li>
-                            <a href="https://secure.ally.com/products-and-rates/" class="btn btn-default btn-lg">
-                                <i class="fa fa-shield fa-fw"></i>
-                                <span class="network-name">Live Site (requires account)</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <div class="modal-footer"></div>
@@ -408,15 +342,6 @@
                     <h4 class="modal-title" id="oplanModalLabel">OPlan (Operational Plan)</h4>
                 </div>
                 <div class="modal-body">
-                    <ul class="list-inline banner-social-buttons">
-                        <li data-replace="contact-link"></li>
-                        <li>
-                            <a href="http://oplan.co" class="btn btn-default btn-lg">
-                                <i class="fa fa-github fa-fw"></i>
-                                <span class="network-name">Live Site</span>
-                            </a>
-                        </li>
-                    </ul>
                     <p class="modal-body-text">Oplan (operations plan) was a specialty inventory management system tailored to specific customer needs.</p>
                     <img src="img/oplan-scan.jpg" class="mod-image" alt="oplan inventory website screen capture">
                     <p class="modal-body-text">This is the customer page, where you can add new customers or search for an existing one and start an

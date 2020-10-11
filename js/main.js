@@ -47,7 +47,7 @@ const dataReplace = [{
     "content": {
         "skillIcon": [{
             "src": "img/bow.png",
-            "text": "ES6/HTML5/CSS3"
+            "text": "JavaScript"
         }, {
             "src": "img/net.png",
             "text": "Python3"
@@ -79,11 +79,11 @@ const dataReplace = [{
             "src": "img/green-pot.png",
             "text": "Typescript"
         }, {
-            "src": "img/blue-pot.png",
-            "text": "Unix Shell"
-        }, {
             "src": "img/sheild.png",
             "text": "ADA"
+        }, {
+            "src": "img/blue-pot.png",
+            "text": "Unix Shell"
         }, {
             "src": "img/gem.png",
             "text": "Node"
@@ -178,6 +178,7 @@ const handleInput = function() {
 
     document.getElementById('portfolio').addEventListener('mousemove', function (e) {
         shipX = e.pageX;
+        // const buff = parseInt(window.getComputedStyle(document.getElementsByTagName('body')[0]).width) / 8;
         const buff = $(window).width() / 8;
         shipM = (shipX - buff);
         document.getElementById('ship').style.marginLeft = shipM + 'px';
