@@ -359,7 +359,7 @@ progress[value]::-webkit-progress-value {
 }*/
 
 .brand-heading img {
-    width: 40%;
+    width: 100%;
 }
 
 .intro .intro-body .brand-heading {
