@@ -1,7 +1,7 @@
 // TODO: move all of this into seperate JSON content files
 const dataReplace = [{
     "type": "contact-link",
-    "content": "<li><a href=\"mailto:joshuawordsmith@gmail.com\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-envelope fa-fw\"></i><span class=\"network-name\">Contact Josh</span></a></li>"
+    "content": "<li><a href=\"mailto:joshuawordsmith@gmail.com\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-envelope fa-fw\"></i><span class=\"network-name\">Contact Jocelyn</span></a></li>"
 }, {
     "type": "close-button",
     "content": "<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>"
@@ -35,9 +35,9 @@ const dataReplace = [{
             "text": "Github"
         }],
         "signoff": [{
-            "header": "Contact Joshua Smith",
+            "header": "Contact Jocelyn Smith",
             "copy1": "Whether you liked anything enough to talk about working together, or hated anything enough that you need to let me know, I look forward to hearing from you.",
-            "email": "JoshuaWordSmith@gmail.com",
+            "email": "Email me",
             "emailHref": "mailto:joshuawordsmith@gmail.com",
             "copy2": "References and sweet drum solos available upon request."
         }]
