@@ -4,6 +4,14 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+ /* @font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'), url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+  } */
+
 body {
     width: 100%;
     height: 100%;
@@ -66,6 +74,11 @@ a {
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+}
+
+.content-section a {
+    background-color: rgb(250, 250, 210);
+    text-decoration: underline;
 }
 
 a:hover, a:focus {
@@ -346,7 +359,7 @@ progress[value]::-webkit-progress-value {
 }*/
 
 .brand-heading img {
-    width: 100%;
+    width: 40%;
 }
 
 .intro .intro-body .brand-heading {
@@ -729,4 +742,8 @@ li.modal-text {
 
 .modal-text {
     list-style: inside;
+}
+
+body {
+    display: initial;
 }
