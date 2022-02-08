@@ -33,12 +33,14 @@ const dataReplace = [{
             "href": "https://github.com/JoshuaWordSmith",
             "icon": "github",
             "text": "Github"
+        },{
+            "href": "https://www.linkedin.com/in/jocelyn-smith-she-her-a16355109",
+            "icon": "linked",
+            "text": "LinkedIn"
         }],
         "signoff": [{
             "header": "Contact Jocelyn Smith",
             "copy1": "Whether you liked anything enough to talk about working together, or hated anything enough that you need to let me know, I look forward to hearing from you.",
-            "email": "Email me",
-            "emailHref": "mailto:joshuawordsmith@gmail.com",
             "copy2": "References and sweet drum solos available upon request."
         }]
     }
