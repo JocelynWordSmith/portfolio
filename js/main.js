@@ -33,7 +33,7 @@ const dataReplace = [{
             "href": "https://github.com/JocelynWordSmith",
             "icon": "github",
             "text": "Github"
-        },{
+        }, {
             "href": "https://www.linkedin.com/in/jocelyn-smith-she-her-a16355109",
             "icon": "linkedin",
             "text": "LinkedIn"
@@ -92,9 +92,27 @@ const dataReplace = [{
         }]
     }
 }];
+
+function isCollide(a, b) {
+    var aRect = a.getBoundingClientRect();
+    var bRect = b.getBoundingClientRect();
+
+    return !(
+        ((aRect.top + aRect.height) < (bRect.top)) ||
+        (aRect.top > (bRect.top + bRect.height)) ||
+        ((aRect.left + aRect.width) < bRect.left) ||
+        (aRect.left > (bRect.left + bRect.width))
+    );
+}
+
 // animates the bottom border or an element
+const modalLinks = document.getElementsByClassName('mod-link');
+
 const move = function (elem, bottom) {
     setTimeout(function () {
+        if (!elem.parentNode) {
+            return null;
+        }
         bottom += 10;
         elem.style.bottom = bottom + 'px';
         if (bottom < 500) {
@@ -102,6 +120,15 @@ const move = function (elem, bottom) {
         } else {
             elem.parentNode.removeChild(elem);
         }
+        [].forEach.call(modalLinks, function (link) {
+            if (isCollide(elem, link)) {
+                elem.parentNode.removeChild(elem);
+                link.style.backgroundColor = 'RED'
+                setTimeout(function () {
+                    link.style.backgroundColor = ''
+                }, 200);
+            }
+        });
     }, 5);
 };
 // vanilla append
@@ -165,7 +192,7 @@ const processJSONContent = function () {
     });
 };
 // this sets up listener events for user interaction
-const handleInput = function() {
+const handleInput = function () {
     let shipX = 0;
     let shipM = 0;
     let gameBox = document.getElementsByClassName('game-box')[0];
@@ -180,38 +207,46 @@ const handleInput = function() {
     });
     const portfolioContainer = document.querySelector('#portfolio .container');
     const ship = document.getElementById('ship');
-    
+    const shipBound = document.getElementById('ship-bound');
+
     portfolioContainer.addEventListener('mousemove', function (e) {
         const computedStyle = window.getComputedStyle(portfolioContainer);
-        // shipX = e.pageX;
-        // console.log('move', shipX);
-        // const buff = parseInt(window.getComputedStyle(document.getElementsByTagName('body')[0]).width) / 8;
-        // const buff = $(window).width() / 8;
-        // shipM = (shipX - buff);
         const offsetX = parseInt(computedStyle.getPropertyValue('margin-left'), 10);
         const shipCenter = parseInt(window.getComputedStyle(ship).getPropertyValue('width'), 10) / 2;
+
         shipM = e.clientX - offsetX - shipCenter;
         console.log(e.clientX, offsetX, shipCenter);
-        // shipM = e.offsetX;
-        // shipM = e.pageX;
-        // if (shipM < gameBox.offsetLeft) {
-        //     shipM = gameBox.offsetLeft;
-        // } else if (shipM > gameBox.offsetRight) {
-        //     shipM = gameBox.offsetRight;
-        // }
         document.getElementById('ship').style.marginLeft = shipM + 'px';
     });
 
-    [].forEach.call(document.getElementsByClassName('mod-link'), function (el) {
-        el.addEventListener('click', function () {
-            const ship = document.getElementById('ship-bound');
-            const bullet = document.createElement('div');
-            bullet.setAttribute('class', 'bullet');
-            bullet.setAttribute('style', 'left:' + (shipM + 52) + 'px;');
-            ship.appendChild(bullet);
-            move(bullet, 0);
-        });
+    function shootBullet() {
+        const bullet = document.createElement('div');
+        bullet.setAttribute('class', 'bullet');
+        bullet.setAttribute('style', 'left:' + (shipM + 52) + 'px;');
+        shipBound.appendChild(bullet);
+        move(bullet, 0);
+    }
+
+    portfolioContainer.addEventListener('click', function () {
+        const bullet = document.createElement('div');
+        bullet.setAttribute('class', 'bullet');
+        bullet.setAttribute('style', 'left:' + (shipM + 52) + 'px;');
+        shipBound.appendChild(bullet);
+        move(bullet, 0);
     });
+
+    // [].forEach.call(document.getElementsByClassName('mod-link'), function (el) {
+
+    // [].forEach.call(document.getElementsByClassName('mod-link'), function (el) {
+    //     el.addEventListener('click', function () {
+    //         const ship = document.getElementById('ship-bound');
+    //         const bullet = document.createElement('div');
+    //         bullet.setAttribute('class', 'bullet');
+    //         bullet.setAttribute('style', 'left:' + (shipM + 52) + 'px;');
+    //         ship.appendChild(bullet);
+    //         move(bullet, 0);
+    //     });
+    // });
 }
 
 document.addEventListener('DOMContentLoaded', handleInput);

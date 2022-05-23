@@ -259,6 +259,7 @@ progress[value]::-webkit-progress-value {
 
 #ship {
     z-index: 1000;
+    margin-left: 48%;
 }
 
 .light {
