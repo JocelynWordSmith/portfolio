@@ -168,6 +168,7 @@ const processJSONContent = function () {
 const handleInput = function() {
     let shipX = 0;
     let shipM = 0;
+    let gameBox = document.getElementsByClassName('game-box')[0];
 
     // collapse the navbar on scroll
     window.addEventListener('scroll', function () {
@@ -177,12 +178,27 @@ const handleInput = function() {
             navbar.classList.remove('top-nav-collapse');
         }
     });
-
-    document.getElementById('portfolio').addEventListener('mousemove', function (e) {
-        shipX = e.pageX;
+    const portfolioContainer = document.querySelector('#portfolio .container');
+    const ship = document.getElementById('ship');
+    
+    portfolioContainer.addEventListener('mousemove', function (e) {
+        const computedStyle = window.getComputedStyle(portfolioContainer);
+        // shipX = e.pageX;
+        // console.log('move', shipX);
         // const buff = parseInt(window.getComputedStyle(document.getElementsByTagName('body')[0]).width) / 8;
-        const buff = $(window).width() / 8;
-        shipM = (shipX - buff);
+        // const buff = $(window).width() / 8;
+        // shipM = (shipX - buff);
+        const offsetX = parseInt(computedStyle.getPropertyValue('margin-left'), 10);
+        const shipCenter = parseInt(window.getComputedStyle(ship).getPropertyValue('width'), 10) / 2;
+        shipM = e.clientX - offsetX - shipCenter;
+        console.log(e.clientX, offsetX, shipCenter);
+        // shipM = e.offsetX;
+        // shipM = e.pageX;
+        // if (shipM < gameBox.offsetLeft) {
+        //     shipM = gameBox.offsetLeft;
+        // } else if (shipM > gameBox.offsetRight) {
+        //     shipM = gameBox.offsetRight;
+        // }
         document.getElementById('ship').style.marginLeft = shipM + 'px';
     });
 

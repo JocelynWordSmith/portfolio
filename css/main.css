@@ -253,8 +253,11 @@ progress[value]::-webkit-progress-value {
     clear: both;
 }
 
+#ship-bound {
+    width: 100%;
+}
+
 #ship {
-    position: absolute;
     z-index: 1000;
 }
 
