@@ -35,7 +35,7 @@ const dataReplace = [{
             "text": "Github"
         },{
             "href": "https://www.linkedin.com/in/jocelyn-smith-she-her-a16355109",
-            "icon": "linked",
+            "icon": "linkedin",
             "text": "LinkedIn"
         }],
         "signoff": [{
