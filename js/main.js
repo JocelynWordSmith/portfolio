@@ -9,17 +9,17 @@ const dataReplace = [{
     "dataTemplate": "navbar-main-collapse",
     "content": {
         "listItem": [{
-            "href": "about",
-            "text": "About"
-        }, {
-            "href": "portfolio",
-            "text": "Portfolio"
+            "href": "contact",
+            "text": "Contact"
         }, {
             "href": "work-history",
             "text": "Work History"
         }, {
-            "href": "contact",
-            "text": "Contact"
+            "href": "portfolio",
+            "text": "Portfolio"
+        }, {
+            "href": "about",
+            "text": "About"
         }]
     }
 }, {
@@ -40,8 +40,8 @@ const dataReplace = [{
         }],
         "signoff": [{
             "header": "Contact Jocelyn Smith",
-            "copy1": "Whether you liked anything enough to talk about working together, or hated anything enough that you need to let me know, I look forward to hearing from you.",
-            "copy2": "References and sweet drum solos available upon request."
+            "copy1": "Whether you want to build something together, have questions about my work, or just want to connect — I'd love to hear from you.",
+            "copy2": "References (and sweet drum solos) available upon request."
         }]
     }
 }, {
@@ -193,9 +193,7 @@ const processJSONContent = function () {
 };
 // this sets up listener events for user interaction
 const handleInput = function () {
-    let shipX = 0;
     let shipM = 0;
-    let gameBox = document.getElementsByClassName('game-box')[0];
 
     // collapse the navbar on scroll
     window.addEventListener('scroll', function () {
@@ -215,17 +213,8 @@ const handleInput = function () {
         const shipCenter = parseInt(window.getComputedStyle(ship).getPropertyValue('width'), 10) / 2;
 
         shipM = e.clientX - offsetX - shipCenter;
-        console.log(e.clientX, offsetX, shipCenter);
         document.getElementById('ship').style.marginLeft = shipM + 'px';
     });
-
-    function shootBullet() {
-        const bullet = document.createElement('div');
-        bullet.setAttribute('class', 'bullet');
-        bullet.setAttribute('style', 'left:' + (shipM + 52) + 'px;');
-        shipBound.appendChild(bullet);
-        move(bullet, 0);
-    }
 
     portfolioContainer.addEventListener('click', function () {
         const bullet = document.createElement('div');
@@ -235,18 +224,6 @@ const handleInput = function () {
         move(bullet, 0);
     });
 
-    // [].forEach.call(document.getElementsByClassName('mod-link'), function (el) {
-
-    // [].forEach.call(document.getElementsByClassName('mod-link'), function (el) {
-    //     el.addEventListener('click', function () {
-    //         const ship = document.getElementById('ship-bound');
-    //         const bullet = document.createElement('div');
-    //         bullet.setAttribute('class', 'bullet');
-    //         bullet.setAttribute('style', 'left:' + (shipM + 52) + 'px;');
-    //         ship.appendChild(bullet);
-    //         move(bullet, 0);
-    //     });
-    // });
 }
 
 document.addEventListener('DOMContentLoaded', handleInput);
