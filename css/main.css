@@ -341,23 +341,6 @@ img::-moz-selection {
    About Section / Player Stats
    ========================================================================== */
 
-.ascii-portrait {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 13px;
-    line-height: 1.15;
-    color: #2bff00;
-    background-color: #1a1a2e;
-    border: 3px solid #ffae00;
-    border-radius: 8px;
-    padding: 10px 8px;
-    display: inline-block;
-    text-align: left;
-    white-space: pre;
-    box-shadow: 0 0 15px rgba(43, 255, 0, 0.3), inset 0 0 20px rgba(0, 0, 0, 0.5);
-    text-shadow: 0 0 5px rgba(43, 255, 0, 0.5);
-    margin-bottom: 20px;
-}
-
 .player-img {
     float: left;
     line-height: 66px;
@@ -370,6 +353,7 @@ img::-moz-selection {
     float: left;
     line-height: 66px;
     text-align: left;
+    margin-bottom: 100px;
 }
 
 .player-stats img {
