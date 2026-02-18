@@ -227,4 +227,70 @@ const handleInput = function () {
 }
 
 document.addEventListener('DOMContentLoaded', handleInput);
+
+// ── Modal ──────────────────────────────────────────────────────────────────
+function openModal(modal) {
+    const backdrop = document.createElement('div');
+    backdrop.className = 'modal-backdrop';
+    document.body.appendChild(backdrop);
+    document.body.classList.add('modal-open');
+    modal.removeAttribute('aria-hidden');
+    modal.classList.add('in');
+}
+function closeModal(modal) {
+    modal.classList.remove('in');
+    modal.setAttribute('aria-hidden', 'true');
+    const backdrop = document.querySelector('.modal-backdrop');
+    if (backdrop) backdrop.remove();
+    document.body.classList.remove('modal-open');
+}
+
+document.addEventListener('click', function (e) {
+    const trigger = e.target.closest('[data-toggle="modal"]');
+    if (trigger) {
+        const target = document.querySelector(trigger.dataset.target);
+        if (target) {
+            // Delay portfolio modals on desktop so the bullet animation plays out first
+            const delay = trigger.closest('.download-section') && window.innerWidth >= 767 ? 300 : 0;
+            setTimeout(() => openModal(target), delay);
+        }
+        return;
+    }
+    const dismiss = e.target.closest('[data-dismiss="modal"]');
+    if (dismiss) { const m = dismiss.closest('.modal'); if (m) closeModal(m); return; }
+    if (e.target.classList.contains('modal') && e.target.classList.contains('in')) closeModal(e.target);
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { const m = document.querySelector('.modal.in'); if (m) closeModal(m); }
+});
+
+// ── Navbar collapse ────────────────────────────────────────────────────────
+document.addEventListener('click', function (e) {
+    const toggle = e.target.closest('[data-toggle="collapse"]');
+    if (toggle) { const t = document.querySelector(toggle.dataset.target); if (t) t.classList.toggle('in'); }
+});
+
+// ── Scrollspy ─────────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav a[href^="#"]');
+    const sections = Array.from(navLinks)
+        .map(a => document.getElementById(a.getAttribute('href').slice(1)))
+        .filter(Boolean);
+
+    window.addEventListener('scroll', function () {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        let current = '';
+        sections.forEach(s => { if (scrollTop >= s.offsetTop - 80) current = s.id; });
+        navLinks.forEach(a => {
+            a.parentElement.classList.toggle('active', a.getAttribute('href') === '#' + current);
+        });
+    }, { passive: true });
+});
+
 processJSONContent();
+// Swap data-src → src so template imgs don't fire a request for the literal "{{src}}" string
+document.querySelectorAll('img[data-src]').forEach(function (img) {
+    img.src = img.dataset.src;
+    img.removeAttribute('data-src');
+});

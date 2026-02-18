@@ -21,13 +21,12 @@
     <style>body { display: none; }</style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic|Montserrat:400,700|Press+Start+2P" rel="stylesheet">
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top">
     <!-- Navigation -->
     <nav id="navbar" class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -115,26 +114,26 @@
                 <h2>Front-End Portfolio</h2>
                 <div class="col-lg-8 col-lg-offset-2 game-box">
                     <div class="col-sm-12">
-                        <button class="clean-button mod-link-container">
-                            <img src="img/invader.png" class="mod-link" loading="lazy" data-toggle="modal" data-target="#ally-modal" alt="View Ally Bank project">
+                        <button class="clean-button mod-link-container" data-toggle="modal" data-target="#ally-modal">
+                            <img src="img/invader.png" class="mod-link" loading="lazy" alt="View Ally Bank project">
                             <div>Ally</div>
                         </button>
-                        <button class="clean-button mod-link-container">
-                            <img src="img/invader.png" class="mod-link" loading="lazy" data-toggle="modal" data-target="#bofa-modal" alt="View Bank of America project">
+                        <button class="clean-button mod-link-container" data-toggle="modal" data-target="#bofa-modal">
+                            <img src="img/invader.png" class="mod-link" loading="lazy" alt="View Bank of America project">
                             <div>BofA</div>
                         </button>
                     </div>
                     <div class="col-sm-12">
-                        <button class="clean-button mod-link-container">
-                            <img src="img/invader.png" class="mod-link" loading="lazy" data-toggle="modal" data-target="#hunger-modal" alt="View Hunger Crunch project">
+                        <button class="clean-button mod-link-container" data-toggle="modal" data-target="#hunger-modal">
+                            <img src="img/invader.png" class="mod-link" loading="lazy" alt="View Hunger Crunch project">
                             <div>Hunger Crunch</div>
                         </button>
-                        <button class="clean-button mod-link-container">
-                            <img src="img/invader.png" class="mod-link" loading="lazy" data-toggle="modal" data-target="#oplan-modal" alt="View OPlan project">
+                        <button class="clean-button mod-link-container" data-toggle="modal" data-target="#oplan-modal">
+                            <img src="img/invader.png" class="mod-link" loading="lazy" alt="View OPlan project">
                             <div>Oplan</div>
                         </button>
-                        <button class="clean-button mod-link-container">
-                            <img src="img/invader.png" class="mod-link" loading="lazy" data-toggle="modal" data-target="#michelin-modal" alt="View Michelin project">
+                        <button class="clean-button mod-link-container" data-toggle="modal" data-target="#michelin-modal">
+                            <img src="img/invader.png" class="mod-link" loading="lazy" alt="View Michelin project">
                             <div>Michelin</div>
                         </button>
                     </div>
@@ -531,7 +530,7 @@
                     </div>
                     <div class="modal-body skills-modal">
                         <div data-iterate="skillIcon">
-                            <img src="{{src}}" aria-hidden="true">
+                            <img data-src="{{src}}" aria-hidden="true">
                             <h3>{{text}}</h3>
                         </div>
                     </div>
@@ -562,10 +561,6 @@
     </script>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/main.js"></script>
 </body>
