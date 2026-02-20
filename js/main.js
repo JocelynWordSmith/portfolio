@@ -1,7 +1,7 @@
 // TODO: move all of this into seperate JSON content files
 const dataReplace = [{
     "type": "contact-link",
-    "content": "<li><a href=\"mailto:jocelyn.willwork@gmail.com\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-envelope fa-fw\"></i><span class=\"network-name\">Contact Jocelyn</span></a></li>"
+    "content": "<li><a href=\"mailto:jocelynsmith.dev+portfolio@gmail.com\" class=\"btn btn-default btn-lg\"><i class=\"fa fa-envelope fa-fw\"></i><span class=\"network-name\">Contact Jocelyn</span></a></li>"
 }, {
     "type": "close-button",
     "content": "<button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">Close</button>"
@@ -26,7 +26,7 @@ const dataReplace = [{
     "dataTemplate": "contact-section",
     "content": {
         "listItem": [{
-            "href": "mailto:jocelyn.willwork@gmail.com",
+            "href": "mailto:jocelynsmith.dev+portfolio@gmail.com",
             "icon": "envelope",
             "text": "Email"
         }, {
@@ -208,12 +208,12 @@ const handleInput = function () {
     const shipBound = document.getElementById('ship-bound');
 
     portfolioContainer.addEventListener('mousemove', function (e) {
-        const computedStyle = window.getComputedStyle(portfolioContainer);
-        const offsetX = parseInt(computedStyle.getPropertyValue('margin-left'), 10);
-        const shipCenter = parseInt(window.getComputedStyle(ship).getPropertyValue('width'), 10) / 2;
+        const containerRect = portfolioContainer.getBoundingClientRect();
+        const shipWidth = ship.offsetWidth;
 
-        shipM = e.clientX - offsetX - shipCenter;
-        document.getElementById('ship').style.marginLeft = shipM + 'px';
+        shipM = e.clientX - containerRect.left - shipWidth / 2;
+        shipM = Math.max(0, Math.min(shipM, containerRect.width - shipWidth));
+        ship.style.marginLeft = shipM + 'px';
     });
 
     portfolioContainer.addEventListener('click', function () {
